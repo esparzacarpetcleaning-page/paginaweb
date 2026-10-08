@@ -1,0 +1,776 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Request &amp; Free Estimate | Esparza's Carpet Cleaning</title>
+  <meta name="description" content="Request your specific estimate for deep steam cleaning of carpets, furniture, and tile in Phoenix, AZ. Complete your details and attach photos directly in our WhatsApp.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="icon" type="image/png" href="assets/images/logo-spartan.png">
+</head>
+<body>
+
+  <!-- Top Notice Bar -->
+  <div class="top-notice-bar">
+    <div class="container">
+      <div class="top-notice-info">
+        <span class="top-notice-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="top_area">Phoenix Metropolitan Area &amp; Surrounding Cities</span>
+        </span>
+        <span class="top-notice-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-i18n="top_hours">Mon, Wed - Sun: 7:00 AM - 5:00 PM (Closed Tue)</span>
+        </span>
+        <span class="top-notice-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span data-i18n="top_direct">Text / WhatsApp: (602) 575-9974</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" title="Esparza's Carpet Cleaning">
+        <img src="assets/images/logo-spartan.png" alt="Esparza's Carpet Cleaning Logo" width="60" height="60" data-i18n-alt="logo_main_alt">
+        <div class="logo-text-group">
+          <span class="logo-main-text">ESPARZA'S</span>
+          <span class="logo-sub-text">CARPET CLEANING</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_inicio">HOME</a></li>
+          <li><a href="servicios.html" class="nav-link" data-i18n="nav_servicios">SERVICES</a></li>
+          <li><a href="index.html#tarifas" class="nav-link" data-i18n="nav_tarifas">FREE ESTIMATE</a></li>
+          <li><a href="galeria.html" class="nav-link" data-i18n="nav_galeria">GALLERY</a></li>
+          <li><a href="index.html#promociones" class="nav-link" data-i18n="nav_promociones">SPECIAL OFFERS</a></li>
+          <li><a href="index.html#comentarios" class="nav-link" data-i18n="nav_resenas">REVIEWS</a></li>
+          <li><a href="nosotros.html" class="nav-link" data-i18n="nav_nosotros">ABOUT US</a></li>
+          <li><a href="contacto.html" class="nav-link" data-i18n="nav_contacto">CONTACT</a></li>
+        </ul>
+
+        <!-- Language Switcher (Desktop) -->
+        <div class="lang-switch-container">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <span class="lang-separator">|</span>
+          <button type="button" class="lang-btn" data-lang="es">ES</button>
+        </div>
+
+        <a href="solicitud.html" class="btn-nav-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.53-.12.21.08 1.33.63 1.56.74.23.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/></svg>
+          <span data-i18n="nav_cta">REQUEST SERVICE</span>
+        </a>
+      </nav>
+
+      <button class="mobile-toggle-btn" aria-label="Mobile Navigation Menu" data-i18n-aria="nav_menu_aria">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+      <div class="lang-switch-container">
+        <button type="button" class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-separator">|</span>
+        <button type="button" class="lang-btn" data-lang="es">ES</button>
+      </div>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link" data-i18n="nav_inicio">HOME</a></li>
+      <li><a href="servicios.html" class="nav-link" data-i18n="nav_servicios">SERVICES</a></li>
+      <li><a href="index.html#tarifas" class="nav-link" data-i18n="nav_tarifas">FREE ESTIMATE</a></li>
+      <li><a href="galeria.html" class="nav-link" data-i18n="nav_galeria">GALLERY</a></li>
+      <li><a href="index.html#promociones" class="nav-link" data-i18n="nav_promociones">SPECIAL OFFERS</a></li>
+      <li><a href="index.html#comentarios" class="nav-link" data-i18n="nav_resenas">REVIEWS</a></li>
+      <li><a href="nosotros.html" class="nav-link" data-i18n="nav_nosotros">ABOUT US</a></li>
+      <li><a href="contacto.html" class="nav-link" data-i18n="nav_contacto">CONTACT</a></li>
+    </ul>
+    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+      <a href="solicitud.html" class="btn-nav-gold" style="width: 100%; justify-content: center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.53-.12.21.08 1.33.63 1.56.74.23.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/></svg>
+        <span data-i18n="nav_cta">REQUEST SERVICE</span>
+      </a>
+      <a href="https://wa.me/16025759974" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-i18n="nav_call">Text / WhatsApp: (602) 575-9974</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="section-dark" style="position: relative; overflow: hidden; padding: 4.5rem 0 3.5rem 0; background: linear-gradient(180deg, #040E1B 0%, #061325 50%, #0B1F36 100%);">
+      <div class="ambient-glow-orb orb-amber" style="width: 500px; height: 500px; top: -100px; right: -80px;"></div>
+      <div class="ambient-glow-orb orb-azure" style="width: 450px; height: 450px; bottom: 0; left: -80px;"></div>
+      <div class="container reveal-on-scroll is-visible" style="text-align: center; position: relative; z-index: 2;">
+        <span class="section-badge gold" data-i18n="sol_hero_badge">Direct &amp; Personalized Attention</span>
+        <h1 class="section-title" style="font-size: 2.7rem;"><span data-i18n="sol_hero_title_1">SERVICE REQUEST &amp;</span> <span class="highlight" data-i18n="sol_hero_title_2">FREE ESTIMATE</span></h1>
+        <p class="section-subtitle" style="max-width: 800px; margin: 0 auto;" data-i18n="sol_hero_sub">
+          Enter the specific details of what you need cleaned and your location. We will confirm your exact flat quote and schedule your appointment directly in our WhatsApp chat.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPLICACIÓN Y BASES DE SERVICIO -->
+    <section class="section section-light" style="padding: 2rem 0 0 0;">
+      <div class="container reveal-on-scroll">
+        <div style="background: #FFFFFF; border-radius: var(--radius-md); border-left: 5px solid var(--color-accent); padding: 1.5rem 2rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem; align-items: flex-start;">
+          <div style="background: rgba(212, 175, 55, 0.15); border-radius: 50%; padding: 0.6rem; color: var(--color-accent-hover); flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.35rem;" data-i18n="sol_bases_title">
+              Clear Terms: Personalized Assessment by Esparza's
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;" data-i18n="sol_bases_desc">
+              Every home is unique. Our quotes consider standard rooms up to 13×15 ft. Minimum service call: 1 standard room (travel fee applies for single-room bookings). Coverage throughout the Phoenix Metropolitan Valley.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO ESPECÍFICO DE SOLICITUD -->
+    <section class="section section-light">
+      <div class="container">
+        <div style="background: #FFFFFF; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--color-border-light); padding: 3rem 2.5rem; max-width: 980px; margin: 0 auto;">
+          
+          <div style="margin-bottom: 2.25rem; border-bottom: 2px solid #F1F5F9; padding-bottom: 1.25rem;">
+            <span style="font-size: 0.8rem; font-weight: 800; color: var(--color-accent); letter-spacing: 0.1em; text-transform: uppercase;" data-i18n="sol_step_tag">Step by Step</span>
+            <h2 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; color: var(--color-primary); margin-top: 0.25rem;" data-i18n="sol_form_title">
+              Specify Your Cleaning Request
+            </h2>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); margin: 0;" data-i18n="sol_form_sub">
+              Fill out the fields below. When you press the final button, your message will be generated with a complete breakdown ready to send via WhatsApp.
+            </p>
+          </div>
+
+          <form id="service-request-form" onsubmit="handleServiceRequestSubmit(event)">
+            
+            <!-- SECCIÓN 1: DATOS Y UBICACIÓN -->
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.75rem;" data-i18n="sol_step1_title">
+                <span class="form-step-badge">1</span>
+                Contact Information &amp; Service Address
+              </h3>
+
+              <div class="form-row-2col">
+                <div>
+                  <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_name">Full Name *</label>
+                  <input type="text" id="req-name" required placeholder="e.g. Claudia Martinez" style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem;">
+                </div>
+                <div>
+                  <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_phone">WhatsApp Phone Number *</label>
+                  <input type="tel" id="req-phone" required placeholder="e.g. 602-555-0199" style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem;">
+                </div>
+              </div>
+
+              <div style="margin-bottom: 1.2rem;">
+                <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_address">Service Address (Street, Number, Cross streets) *</label>
+                <input type="text" id="req-address" required placeholder="e.g. 3421 W McDowell Rd, Apt 4" style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem;">
+              </div>
+
+              <div class="form-row-2col">
+                <div>
+                  <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_city">City *</label>
+                  <select id="req-city" required style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem; background: #FFFFFF;">
+                    <option value="" data-i18n="sol_city_select">Select your city...</option>
+                    <option value="Phoenix">Phoenix</option>
+                    <option value="Glendale">Glendale</option>
+                    <option value="Scottsdale">Scottsdale</option>
+                    <option value="Mesa">Mesa</option>
+                    <option value="Tempe">Tempe</option>
+                    <option value="Chandler">Chandler</option>
+                    <option value="Gilbert">Gilbert</option>
+                    <option value="Peoria">Peoria</option>
+                    <option value="Surprise">Surprise</option>
+                    <option value="Avondale">Avondale</option>
+                    <option value="Goodyear">Goodyear</option>
+                    <option value="Tolleson">Tolleson</option>
+                    <option value="Buckeye">Buckeye</option>
+                    <option value="El Mirage">El Mirage</option>
+                    <option value="Litchfield Park">Litchfield Park</option>
+                    <option value="Otra" data-i18n="sol_city_other">Other Valley city...</option>
+                  </select>
+                </div>
+                <div>
+                  <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_zip">ZIP Code *</label>
+                  <input type="text" id="req-zip" required placeholder="e.g. 85009" style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem;">
+                </div>
+              </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #E2E8F0; margin-bottom: 2.5rem;">
+
+            <!-- SECCIÓN 2: ESPECIFICACIÓN DETALLADA DE SERVICIOS -->
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem;" data-i18n="sol_step2_title">
+                <span class="form-step-badge">2</span>
+                What Do You Need Cleaned? (Specify Quantities)
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 1.5rem;" data-i18n="sol_step2_sub">
+                Select only the areas or items requiring service.
+              </p>
+
+              <!-- A. Carpets & Stairs -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                  <span class="gold-medallion-icon sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                    </svg>
+                  </span>
+                  <span data-i18n="sol_cat_carpets">Carpets &amp; Stairs</span>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+                  <!-- Cuartos -->
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_rooms">Bedrooms / Rooms</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_rooms">Base up to 13×15 ft (Special 3 rooms)</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-rooms', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-rooms">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-rooms', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <!-- Pasillos -->
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_hallways">Hallways</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_hallways">1st Hallway FREE in special package</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-hallways', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-hallways">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-hallways', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <!-- Escaleras -->
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_stairs">Flights of Stairs</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_stairs">Carpeted steps</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-stairs', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-stairs">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-stairs', 1)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- B. Muebles y Salas -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                  <span class="gold-medallion-icon sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/>
+                      <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"/>
+                      <path d="M5 18v2"/>
+                      <path d="M19 18v2"/>
+                    </svg>
+                  </span>
+                  <span data-i18n="sol_cat_furniture">Furniture, Sofas &amp; Chairs</span>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_sofa3">Standard Sofa (3-Seater)</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_sofa3">Deep steam wash of cushions and base</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-sofa3', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-sofa3">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-sofa3', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_sofaL">'L' Shape Sectional Couch</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_sofaL">Family-sized sectionals</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-sofaL', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-sofaL">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-sofaL', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_armchair">Armchair / Recliner</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_armchair">Single seater</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-armchair', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-armchair">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-armchair', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_chairs">Dining Chairs</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_chairs">Upholstered seat and backrest</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-chairs', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-chairs">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-chairs', 1)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- C. Colchones -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                  <span class="gold-medallion-icon sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M2 4v16"/>
+                      <path d="M2 8h18a2 2 0 0 1 2 2v10"/>
+                      <path d="M2 17h20"/>
+                      <path d="M6 8v9"/>
+                    </svg>
+                  </span>
+                  <span data-i18n="sol_cat_mattresses">Mattress Sanitization (Both Sides)</span>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_mat_king">King / Cal-King</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_mat_king">Deep anti-mite thermal steam</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-mattress-king', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-mattress-king">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-mattress-king', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_mat_queen">Queen / Full Size</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_mat_queen">Complete thermal steam sanitization</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-mattress-queen', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-mattress-queen">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-mattress-queen', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <div class="calc-item-box" style="margin: 0;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" data-i18n="sol_item_mat_twin">Twin (Single)</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_mat_twin">Kids or bunk bed mattresses</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-mattress-twin', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-mattress-twin">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-mattress-twin', 1)">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- D. Pisos de Cerámica / Boquillas (Tile & Grout) -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                  <span class="gold-medallion-icon sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="18" height="18" x="3" y="3" rx="2"/>
+                      <path d="M3 12h18"/>
+                      <path d="M12 3v18"/>
+                    </svg>
+                  </span>
+                  <span data-i18n="sol_cat_tile">Tile &amp; Grout Deep Cleaning</span>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                  <label class="calc-extra-option" style="margin: 0;">
+                    <div class="calc-checkbox-label">
+                      <input type="checkbox" id="chk-tile" onchange="toggleTileFields(this.checked)" class="calc-extra-checkbox">
+                      <div>
+                        <div style="font-weight: 700; font-size: 0.95rem; color: #0F172A;" data-i18n="sol_chk_tile">I want Tile &amp; Grout Deep Cleaning</div>
+                        <div style="font-size: 0.82rem; color: var(--color-text-muted);" data-i18n="sol_sub_tile">High-pressure rotary injection &amp; extraction restoring original grout lines</div>
+                      </div>
+                    </div>
+                  </label>
+
+                  <div id="tile-subfields" style="display: none; padding: 1rem; background: #FFFFFF; border-radius: 8px; border: 1px solid #CBD5E1; margin-top: 0.5rem;">
+                    <div class="form-row-2col">
+                      <div>
+                        <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.35rem; color: #334155;" data-i18n="sol_lbl_sqft">Approximate square feet (Sq Ft):</label>
+                        <input type="number" id="req-tile-sqft" placeholder="e.g. 350 sq ft" style="width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.92rem;">
+                      </div>
+                      <div style="display: flex; align-items: center; padding-top: 1.5rem;">
+                        <label style="display: flex; align-items: flex-start; gap: 0.6rem; cursor: pointer; font-size: 0.88rem; color: #1E293B;">
+                          <input type="checkbox" id="chk-sealant" style="width: 18px; height: 18px; margin-top: 2px;">
+                          <span>
+                            <strong data-i18n="sol_chk_sealant">Add Protective Tile/Grout Sealant</strong><br>
+                            <span style="font-size: 0.78rem; color: #64748B;" data-i18n="sol_sub_sealant">* Conditional service: Only applicable on floors cleaned by Esparza's.</span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- E. Interior de Vehículos -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                  <span class="gold-medallion-icon sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                      <circle cx="7" cy="17" r="2"/>
+                      <path d="M9 17h6"/>
+                      <circle cx="17" cy="17" r="2"/>
+                    </svg>
+                  </span>
+                  <span data-i18n="sol_cat_cars">Vehicle Interior (Exclusive Upholstery &amp; Carpet)</span>
+                </div>
+
+                <div class="calc-item-box" style="margin: 0; max-width: 420px;">
+                  <div class="calc-item-info">
+                    <span class="calc-item-label" data-i18n="sol_item_cars">Cars / SUVs / Trucks (Complete Interior)</span>
+                    <span class="calc-item-hint" data-i18n="sol_hint_cars">Fabric seats + floor carpet extraction</span>
+                  </div>
+                  <div class="calc-counter">
+                    <button type="button" class="calc-btn-count" onclick="changeCount('cnt-cars', -1)">-</button>
+                    <span class="calc-count-val" id="cnt-cars">0</span>
+                    <button type="button" class="calc-btn-count" onclick="changeCount('cnt-cars', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- F. Mascotas y Tratamientos Especiales -->
+              <div style="background: #FFFBEB; border: 1.5px solid #FDE68A; border-radius: 12px; padding: 1.5rem;">
+                <div style="font-weight: 800; font-size: 1.05rem; color: #92400E; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.65rem;">
+                  <span class="gold-medallion-icon sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" fill="rgba(255,214,102,0.2)"/>
+                      <circle cx="9" cy="9" r="1.2" fill="currentColor"/>
+                      <circle cx="15" cy="9" r="1.2" fill="currentColor"/>
+                      <circle cx="12" cy="7" r="1.2" fill="currentColor"/>
+                      <ellipse cx="12" cy="14" rx="2.5" ry="2" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <span data-i18n="sol_cat_pets">Special Pet Treatments (Urine &amp; Hair)</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 1rem;">
+                  <!-- Orina por cuarto -->
+                  <div class="calc-item-box" style="margin: 0; background: #FFFFFF;">
+                    <div class="calc-item-info">
+                      <span class="calc-item-label" style="color: #92400E;" data-i18n="sol_item_pet_urine">Enzymatic Urine Treatment</span>
+                      <span class="calc-item-hint" data-i18n="sol_hint_pet_urine">Per room requiring treatment</span>
+                    </div>
+                    <div class="calc-counter">
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-pet-urine', -1)">-</button>
+                      <span class="calc-count-val" id="cnt-pet-urine">0</span>
+                      <button type="button" class="calc-btn-count" onclick="changeCount('cnt-pet-urine', 1)">+</button>
+                    </div>
+                  </div>
+
+                  <!-- Pelo de Mascota -->
+                  <label class="calc-extra-option" style="margin: 0; background: #FFFFFF; height: 100%; display: flex; align-items: center;">
+                    <div class="calc-checkbox-label">
+                      <input type="checkbox" id="chk-pet-hair" class="calc-extra-checkbox">
+                      <div>
+                        <div style="font-weight: 700; font-size: 0.95rem; color: #0F172A;" data-i18n="sol_item_pet_hair">Embedded Pet Hair Extraction</div>
+                        <div style="font-size: 0.8rem; color: #64748B;" data-i18n="sol_hint_pet_hair">Intensive machine vacuuming &amp; hair extraction</div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <!-- Descargo Legal sobre Pelo -->
+                <div style="background: rgba(217, 119, 6, 0.1); border-left: 3px solid #D97706; padding: 0.85rem 1.15rem; border-radius: 6px; font-size: 0.82rem; color: #78350F; line-height: 1.5;" data-i18n="sol_disclaimer_pet">
+                  * PET HAIR TRANSPARENCY NOTICE: Our high-power extraction machines and vacuums remove massive amounts of pet hair, but 100% removal cannot be guaranteed due to static cling and fiber weave retention.
+                </div>
+              </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #E2E8F0; margin-bottom: 2.5rem;">
+
+            <!-- SECCIÓN 3: PREFERENCIA DE FECHA Y HORARIO -->
+            <div style="margin-bottom: 2.5rem;">
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.75rem;">
+                <span class="form-step-badge">3</span>
+                <span data-i18n="sol_step3_title">Tentative Date &amp; Additional Notes</span>
+              </h3>
+
+              <div class="form-row-2col">
+                <div>
+                  <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_date">Tentative Date (Mon, Wed - Sun — Closed Tuesdays)</label>
+                  <input type="date" id="req-date" style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem;">
+                </div>
+                <div>
+                  <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_time">Preferred Time Window</label>
+                  <select id="req-time-slot" style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem; background: #FFFFFF;">
+                    <option value="Morning (7:00 AM - 12:00 PM)" data-i18n="sol_opt_morning">Morning (7:00 AM - 12:00 PM)</option>
+                    <option value="Afternoon (12:00 PM - 5:00 PM)" data-i18n="sol_opt_afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                    <option value="Any Available Time" data-i18n="sol_opt_any">Any available slot</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.2rem;">
+                <label style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: #1E293B;" data-i18n="sol_lbl_notes">Additional Details (Tough stains, fabric type, or special requirements)</label>
+                <textarea id="req-notes" rows="3" placeholder="e.g. Coffee stain in hallway, beige microfiber sectional..." style="width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); font-size: 0.95rem; font-family: inherit;"></textarea>
+              </div>
+            </div>
+
+            <!-- SECCIÓN 4: ¡CAJA DESTACADA DE FOTOS EN CHAT DE WHATSAPP! -->
+            <div class="chat-photo-instruction-box">
+              <div class="chat-photo-header">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                <span data-i18n="sol_step4_header">FINAL STEP: ATTACH PHOTOS IN OUR WHATSAPP CHAT</span>
+              </div>
+              <p data-i18n="sol_step4_p">
+                Clicking the green button below will immediately open your WhatsApp app with all the details you filled in, ready to send to <strong>Esparza's Carpet Cleaning</strong>.
+              </p>
+              
+              <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.15rem; margin-bottom: 1rem; border-left: 4px solid #D4AF37;">
+                <div style="color: #FDE68A; font-weight: 800; font-size: 0.95rem; margin-bottom: 0.35rem;" data-i18n="sol_step4_attach_title">
+                  📸 Please attach in the chat:
+                </div>
+                <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; line-height: 1.5; color: #FFFFFF;">
+                  <li data-i18n="sol_step4_attach_1">Photos of your sofas or furniture to assess fabric type and soil level.</li>
+                  <li data-i18n="sol_step4_attach_2">Photos of tough stains or heavy traffic areas on carpets.</li>
+                  <li data-i18n="sol_step4_attach_3">Approximate footage or floor photos if requesting Tile &amp; Grout.</li>
+                </ul>
+              </div>
+
+              <div class="chat-photo-notice">
+                <span data-i18n="sol_step4_confirm">✓ Immediate Confirmation: With your photos we will give you your final flat quote and secure your service date.</span>
+                <span data-i18n="sol_step4_min">✓ Professional service coverage throughout Phoenix Metropolitan Valley cities.</span>
+              </div>
+            </div>
+
+            <!-- CHECKBOX OBLIGATORIO DE TÉRMINOS Y CONDICIONES (PALOMITA) -->
+            <div style="margin: 1.5rem 0; background: #F8FAFC; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); padding: 1.15rem 1.25rem;">
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; font-size: 0.92rem; color: #1E293B; line-height: 1.5;">
+                <input type="checkbox" id="req-terms-checkbox" required style="width: 18px; height: 18px; margin-top: 3px; accent-color: var(--color-primary); cursor: pointer;">
+                <span>
+                  <strong data-i18n="sol_terms_req_txt">I have read and accept the Service Policies, Terms &amp; Conditions *</strong>
+                  <span style="display: block; font-size: 0.84rem; color: #64748B; margin-top: 0.25rem;" data-i18n="sol_terms_summary_txt">
+                    Minimum 1 room (travel surcharge applies for single-room visits), text-only communication, and results subject to fabric fiber &amp; stain limitations.
+                    <a href="terminos.html" target="_blank" style="color: var(--color-primary); text-decoration: underline; font-weight: 700;" data-i18n="sol_terms_link">Review full policies here</a>.
+                  </span>
+                </span>
+              </label>
+            </div>
+
+            <!-- BOTÓN DE ENVÍO DIRECTO A WHATSAPP -->
+            <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1.15rem; padding: 1.2rem 2rem; justify-content: center; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="#25D366"/>
+                <path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/>
+              </svg>
+              <span data-i18n="sol_btn_submit">SUBMIT REQUEST &amp; ATTACH PHOTOS VIA WHATSAPP</span>
+            </button>
+
+            <div style="text-align: center; margin-top: 1.25rem; font-size: 0.88rem; color: #64748B;">
+              <span data-i18n="sol_call_alt">Prefer to text directly? Send a text or WhatsApp to</span> <a href="https://wa.me/16025759974" target="_blank" rel="noopener" style="color: var(--color-primary); font-weight: 800;">(602) 575-9974</a>
+              <div style="font-size: 0.82rem; color: #64748B; margin-top: 0.35rem;" data-i18n="sol_text_notice">We respond 100% via text &amp; WhatsApp during business hours to keep accurate written records.</div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA INTERACTIVO DE COBERTURA Y CIUDADES -->
+    <section class="section section-white">
+      <div class="container" style="max-width: 980px;">
+        <div class="coverage-map-section" style="margin: 0;">
+          <span class="section-badge gold" data-i18n="cov_badge">Our Service Area</span>
+          <h2 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; color: var(--color-primary); margin-top: 0.35rem;" data-i18n="cov_title">
+            Coverage Area in Phoenix, Arizona
+          </h2>
+          <p style="color: #64748B; font-size: 0.95rem; margin-bottom: 1.5rem;" data-i18n="cov_sub">
+            We serve the entire metropolitan Valley. Check covered communities and verify location on the map:
+          </p>
+
+          <!-- Google Maps Embed Iframe -->
+          <div class="map-iframe-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425345.5085816913!2d-112.35560942698947!3d33.47545938531126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f841e15265!2sPhoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              title="Coverage Area of Esparza's Carpet Cleaning in Phoenix AZ" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- City Badges -->
+          <div style="margin-top: 1.5rem;">
+            <div style="font-weight: 700; font-size: 0.92rem; color: #1E293B; margin-bottom: 0.6rem;" data-i18n="cov_cities_title">Cities &amp; Communities Served:</div>
+            <div class="map-cities-pills">
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Phoenix</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Glendale</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Scottsdale</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Mesa</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Tempe</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Chandler</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Gilbert</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Peoria</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Surprise</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Avondale</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Goodyear</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Tolleson</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Buckeye</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> El Mirage</span>
+              <span class="map-city-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Litchfield Park</span>
+            </div>
+          </div>
+
+          <!-- Positive Coverage Card -->
+          <div style="background: #F0FDF4; border: 1.5px solid #86EFAC; border-radius: 10px; padding: 1.15rem 1.4rem; color: #166534; margin-top: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div>
+              <strong style="display: block; font-size: 0.95rem;" data-i18n="cov_positive_title">Prompt Valley Service</strong>
+              <span style="font-size: 0.88rem;" data-i18n="cov_positive_desc">We serve homeowners and commercial spaces throughout the Phoenix Metropolitan Area. Send us your address and photos for quick coordination!</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="display: inline-flex; align-items: center; gap: 0.85rem; text-decoration: none;">
+            <img src="assets/images/logo-spartan.png" alt="Esparza's Logo" width="48" height="48" style="width: 48px; height: 48px; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));" data-i18n-alt="logo_footer_alt">
+            <div class="logo-text-group" style="display: flex; flex-direction: column;">
+              <span class="logo-main-text" style="font-family: 'Montserrat', var(--font-heading); font-size: 1.4rem; font-weight: 900; color: #FFFFFF; line-height: 1.05; text-transform: uppercase;">ESPARZA'S</span>
+              <span class="logo-sub-text" style="font-size: 0.72rem; font-weight: 800; color: #DEB853; text-transform: uppercase; letter-spacing: 0.18em;">CARPET CLEANING</span>
+            </div>
+          </a>
+          <p data-i18n="footer_brand_desc">
+            Deep steam injection and extraction specialists in Phoenix, AZ. Residential and commercial cleaning with professional-grade products safe for your entire family.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_nav_title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="servicios.html" data-i18n="nav_services">Our Services</a></li>
+            <li><a href="galeria.html" data-i18n="nav_gallery">Before &amp; After Gallery</a></li>
+            <li><a href="solicitud.html" style="color: #D4AF37; font-weight: 700;" data-i18n="nav_quote">Request Service</a></li>
+            <li><a href="nosotros.html" data-i18n="nav_why">Why Esparza's?</a></li>
+            <li><a href="contacto.html" data-i18n="nav_contact">Contact &amp; Coverage</a></li>
+            <li><a href="terminos.html" data-i18n="nav_terms">Terms &amp; Policies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_services_title">Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="servicios.html#alfombras" data-i18n="footer_srv_carpet">Carpet Cleaning</a></li>
+            <li><a href="servicios.html#sofas" data-i18n="footer_srv_sofas">Couches &amp; Sofas</a></li>
+            <li><a href="servicios.html#colchones" data-i18n="footer_srv_mattress">Mattresses</a></li>
+            <li><a href="servicios.html#pisos" data-i18n="footer_srv_tile">Tile &amp; Grout</a></li>
+            <li><a href="servicios.html#vehiculos" data-i18n="footer_srv_cars">Auto Interiors</a></li>
+            <li><a href="servicios.html#comercial" data-i18n="footer_srv_comm">Commercial &amp; Airbnb</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_contact_title">Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong data-i18n="footer_lbl_phone">Text / WhatsApp:</strong><br>
+                <a href="https://wa.me/16025759974" target="_blank" rel="noopener" style="color:#FFFFFF; font-weight:700;">(602) 575-9974</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <strong data-i18n="footer_lbl_email">Email:</strong><br>
+                <a href="mailto:esparzacarpetcleaning@gmail.com" style="word-break: break-all;">esparzacarpetcleaning@gmail.com</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong data-i18n="footer_lbl_hours">Hours:</strong><br>
+                <span data-i18n="footer_hours_val">Mon, Wed - Sun: 7:00 AM - 5:00 PM (Closed Tue)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> Esparza's Carpet Cleaning. <span data-i18n="footer_rights">All rights reserved.</span> | <a href="terminos.html" style="color: #CBD5E1; text-decoration: underline;" data-i18n="footer_terms">Terms &amp; Policies</a>
+        </div>
+        <div class="footer-social-links" style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="https://wa.me/16025759974" target="_blank" rel="noopener" class="social-icon-btn" title="WhatsApp Directo" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;overflow:hidden;">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="12" fill="#25D366"/>
+              <path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100064240503033" target="_blank" rel="noopener" class="social-icon-btn" title="Facebook Oficial" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#1877F2;color:#FFF;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/esparzascarpetcleaning/" target="_blank" rel="noopener" class="social-icon-btn" title="Instagram Oficial" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);color:#FFF;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://nextdoor.com/pages/esparzas-carpet-cleaning-phoenix-az/" target="_blank" rel="noopener" class="social-icon-btn" title="Nextdoor Phoenix" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#00B246;color:#FFF;font-weight:900;font-size:16px;">
+            <span style="font-family:sans-serif;font-weight:900;">N</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING STICKY CTA DOCK (WhatsApp & Direct SMS) -->
+  <div class="floating-actions-dock">
+    <a href="https://wa.me/16025759974?text=Hello%20Esparza's%20Carpet%20Cleaning!%20I'd%20like%20to%20schedule%20a%20service" target="_blank" rel="noopener" class="dock-btn dock-btn-schedule" title="WhatsApp">
+      <svg class="dock-btn-icon" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="12" fill="#25D366"/>
+        <path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/>
+      </svg>
+      <span class="dock-btn-label" data-i18n="dock_schedule">Enviar Mensaje</span>
+    </a>
+    <a href="sms:16025759974" class="dock-btn dock-btn-call" title="Send SMS / Text Us">
+      <svg class="dock-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+      <span class="dock-btn-label" data-i18n="dock_call">Text Us</span>
+    </a>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/solicitud.js"></script>
+</body>
+</html>

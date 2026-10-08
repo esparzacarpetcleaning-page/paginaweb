@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Esparza's Carpet Cleaning | Tarjeta Digital NFC</title>
+  <meta name="description" content="Tarjeta de presentación digital NFC oficial de Esparza's Carpet Cleaning en Phoenix, AZ. Claudia & Fernando Esparza. Contacto directo por WhatsApp y Texto.">
+  <link rel="icon" type="image/png" href="assets/images/logo-spartan.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Sora:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       NFC DIGITAL BUSINESS CARD - ESPARZA'S CARPET CLEANING
+       ========================================================================== */
+    :root {
+      --bg-dark: #061325;
+      --bg-card: #0B1F36;
+      --bg-card-light: #133256;
+      --color-gold: #D4AF37;
+      --color-gold-bright: #FFE082;
+      --color-gold-dark: #997819;
+      --gold-gradient: linear-gradient(135deg, #FFF6C7 0%, #FFD666 25%, #E5B83B 55%, #C4911E 80%, #9E700F 100%);
+      --color-whatsapp: #25D366;
+      --color-sms: #0284C7;
+      --color-text-white: #FFFFFF;
+      --color-text-muted: #94A3B8;
+      --color-text-dim: #64748B;
+      --radius-xl: 24px;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-pill: 9999px;
+      --shadow-card: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.15);
+      --font-heading: 'Sora', 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: radial-gradient(circle at 50% 0%, #0F2B48 0%, #061325 75%, #030A14 100%);
+      color: var(--color-text-white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.25rem 1rem 3rem 1rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Glow Orbs */
+    .ambient-glow {
+      position: fixed;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .glow-1 { top: -80px; right: -80px; }
+    .glow-2 { bottom: 10%; left: -100px; background: radial-gradient(circle, rgba(2, 132, 199, 0.15) 0%, transparent 70%); }
+
+    /* Card Wrapper (Standard Mobile Phone Profile Width) */
+    .nfc-container {
+      width: 100%;
+      max-width: 440px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* Top Utility Bar (Lang switch, NFC indicator, Share) */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0.25rem;
+    }
+
+    .nfc-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(37, 211, 102, 0.12);
+      border: 1px solid rgba(37, 211, 102, 0.4);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #4ADE80;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .nfc-pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4ADE80;
+      box-shadow: 0 0 8px #4ADE80;
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Language Toggle Switch */
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-pill);
+      padding: 2px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--color-text-muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .lang-btn.active {
+      background: var(--gold-gradient);
+      color: #061325;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ==========================================================================
+       MAIN DIGITAL CARD HERO
+       ========================================================================== */
+    .main-card {
+      background: linear-gradient(165deg, rgba(15, 38, 66, 0.95) 0%, rgba(7, 22, 40, 0.98) 100%);
+      border: 1.5px solid rgba(212, 175, 55, 0.35);
+      border-radius: var(--radius-xl);
+      padding: 2rem 1.5rem 1.75rem 1.5rem;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      backdrop-filter: blur(12px);
+    }
+    .main-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gold-gradient);
+    }
+
+    /* Spartan Shield Logo */
+    .logo-badge-container {
+      position: relative;
+      width: 104px;
+      height: 104px;
+      margin: 0 auto 1.15rem auto;
+    }
+    .logo-ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, #D4AF37, #FFF5C0, #9E700F, #FFF5C0, #D4AF37);
+      animation: rotateRing 14s linear infinite;
+    }
+    @keyframes rotateRing {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .logo-avatar {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #061325;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 8px;
+      border: 3px solid #061325;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+    }
+    .logo-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
+    }
+
+    .brand-title {
+      font-family: var(--font-heading);
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1.15;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    .brand-sub {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--color-gold);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+    }
+
+    /* Owners & Role */
+    .owners-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      color: #E2E8F0;
+      margin-bottom: 1rem;
+    }
+    .owners-pill strong {
+      color: #FFFFFF;
+    }
+
+    .tagline-text {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.45;
+      margin-bottom: 1.25rem;
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Trust Chips */
+    .trust-chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 1.5rem;
+    }
+    .trust-chip {
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--color-gold-bright);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    /* Primary Action Buttons */
+    .actions-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    /* Big Gold VCF Download Button */
+    .btn-save-vcard {
+      background: var(--gold-gradient);
+      color: #061325;
+      font-family: var(--font-heading);
+      font-size: 0.98rem;
+      font-weight: 800;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-lg);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px -4px rgba(229, 184, 59, 0.45);
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-save-vcard:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 12px rgba(229, 184, 59, 0.3);
+    }
+    .btn-save-vcard::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      animation: shimmerBtn 3.5s infinite;
+    }
+    @keyframes shimmerBtn {
+      0% { left: -100%; }
+      30%, 100% { left: 140%; }
+    }
+
+    /* Fast Communication Buttons (WhatsApp & SMS) */
+    .btn-row-dual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    .btn-action-wa {
+      background: linear-gradient(135deg, #25D366 0%, #1EAA52 100%);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      box-shadow: 0 6px 16px -2px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s ease;
+    }
+    .btn-action-sms {
+      background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      box-shadow: 0 6px 16px -2px rgba(2, 132, 199, 0.35);
+      transition: transform 0.2s ease;
+    }
+    .btn-action-wa:active, .btn-action-sms:active {
+      transform: scale(0.97);
+    }
+
+    /* Request Service CTA */
+    .btn-action-quote {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(212, 175, 55, 0.4);
+      color: var(--color-gold-bright);
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 800;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-action-quote:hover {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: var(--color-gold);
+    }
+
+    /* ==========================================================================
+       ESSENTIAL INFO SECTION (POLICIES, HOURS, PAYMENT, COVERAGE)
+       ========================================================================== */
+    .info-card {
+      background: rgba(11, 31, 54, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      backdrop-filter: blur(8px);
+    }
+    .info-card-title {
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .info-item-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .info-item-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .info-icon-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--color-gold);
+      font-size: 1rem;
+    }
+    .info-content {
+      flex: 1;
+    }
+    .info-label {
+      font-size: 0.75rem;
+      color: var(--color-text-dim);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 2px;
+    }
+    .info-value {
+      font-size: 0.88rem;
+      color: #F1F5F9;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .info-highlight {
+      color: #4ADE80;
+      font-weight: 700;
+    }
+    .info-closed {
+      color: #F87171;
+      font-weight: 700;
+    }
+
+    /* Cities Pill Carousel / Box */
+    .cities-box {
+      background: rgba(6, 19, 37, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      line-height: 1.5;
+      color: #CBD5E1;
+    }
+
+    /* Links Grid (Website, Gallery, Terms) */
+    .quick-links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+    .quick-link-btn {
+      background: rgba(11, 31, 54, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 0.8rem 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+    .quick-link-btn:hover {
+      background: rgba(212, 175, 55, 0.12);
+      border-color: rgba(212, 175, 55, 0.35);
+      color: var(--color-gold-bright);
+    }
+    .quick-link-icon {
+      color: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    /* Social Icons Row */
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 0.5rem 0;
+    }
+    .social-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .social-btn:active {
+      transform: scale(0.92);
+    }
+    .soc-wa { background: #25D366; color: #FFF; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
+    .soc-fb { background: #1877F2; color: #FFF; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3); }
+    .soc-ig { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: #FFF; box-shadow: 0 4px 12px rgba(253, 29, 29, 0.3); }
+    .soc-nd { background: #00B246; color: #FFF; font-weight: 900; font-size: 19px; box-shadow: 0 4px 12px rgba(0, 178, 70, 0.3); font-family: sans-serif; }
+
+    /* Footer text */
+    .footer-note {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--color-text-dim);
+      line-height: 1.5;
+    }
+
+    /* Toast notification */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #0B1F36;
+      border: 1.5px solid var(--color-gold);
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      z-index: 200;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      pointer-events: none;
+    }
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <div class="nfc-container">
+
+    <!-- Top Utility Bar -->
+    <header class="top-bar">
+      <div class="nfc-live-badge" title="NFC Tag Connected">
+        <span class="nfc-pulse-dot"></span>
+        <span id="txt-nfc-active">NFC ACTIVE</span>
+      </div>
+
+      <div class="top-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" id="btn-lang-en" onclick="setCardLang('en')">EN</button>
+          <button type="button" class="lang-btn" id="btn-lang-es" onclick="setCardLang('es')">ES</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- DIGITAL CARD PROFILE -->
+    <div id="digital-card-view">
+      
+      <!-- MAIN HERO CARD -->
+      <main class="main-card">
+        <!-- Spartan Shield Avatar -->
+        <div class="logo-badge-container">
+          <div class="logo-ring"></div>
+          <div class="logo-avatar">
+            <img src="assets/images/logo-spartan.png" alt="Esparza's Carpet Cleaning Spartan Shield Logo">
+          </div>
+        </div>
+
+        <h1 class="brand-title">ESPARZA'S</h1>
+        <div class="brand-sub">CARPET CLEANING</div>
+
+        <div class="owners-pill">
+          <span>👑</span>
+          <span id="txt-owners"><strong>Claudia Esparza &amp; Fernando Salinas</strong> • Dueños y Operadores</span>
+        </div>
+
+        <p class="tagline-text" id="txt-tagline">
+          Lavado e inyección-extracción profunda a vapor residencial y comercial. Fórmulas de alta gama seguras para tu familia y mascotas en Arizona.
+        </p>
+
+        <!-- Trust Chips -->
+        <div class="trust-chips-row">
+          <span class="trust-chip" id="chip-family">👨‍👩‍👦 Negocio Familiar</span>
+          <span class="trust-chip" id="chip-direct">⭐ Atención Directa</span>
+          <span class="trust-chip" id="chip-pricing">💬 Precios Claros</span>
+          <span class="trust-chip" id="chip-steam">♨️ Vapor a 200°F+</span>
+        </div>
+
+        <!-- FAST ACTIONS -->
+        <div class="actions-grid">
+          <!-- 1. SAVE CONTACT BUTTON (vCard .VCF) -->
+          <button type="button" class="btn-save-vcard" onclick="downloadVCard()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+              <polyline points="17 21 17 13 7 13 7 21"></polyline>
+              <polyline points="7 3 7 8 15 8"></polyline>
+            </svg>
+            <span id="btn-save-txt">GUARDAR EN CONTACTOS</span>
+          </button>
+
+          <!-- 2. WHATSAPP & SMS (PURE TEXT - NO CALL BUTTONS) -->
+          <div class="btn-row-dual">
+            <a href="https://wa.me/16025759974?text=Hola%20Claudia,%20me%20gustar%C3%ADa%20cotizar%20un%20servicio%20con%20Esparza's%20Carpet%20Cleaning." target="_blank" rel="noopener" class="btn-action-wa" id="btn-wa">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.4 1.3-1.98 1.38-.5.08-1.15.1-1.87-.13-.44-.14-1.01-.33-1.75-.65-3.11-1.35-5.12-4.51-5.28-4.72-.15-.2-1.27-1.69-1.27-3.22 0-1.53.81-2.28 1.09-2.59.28-.31.61-.39.82-.39.2 0 .41 0 .59.01.19.01.45-.08.7.54.27.63.91 2.23.99 2.39.08.17.13.36.03.56-.1.2-.15.33-.31.51-.15.18-.33.4-.47.54-.15.15-.32.32-.14.63.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.51.31.15.49.13.67-.08.18-.2.77-.9 1-.21.2.31.41.26.68.15.27-.1 1.7-.8 2-1 .3-.15.49-.23.56-.35.08-.13.08-.73-.16-1.41z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+
+            <a href="sms:16025759974" class="btn-action-sms" id="btn-sms">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span id="btn-sms-txt">Enviar SMS</span>
+            </a>
+          </div>
+
+          <!-- 3. REQUEST SERVICE FORM -->
+          <a href="solicitud.html" class="btn-action-quote">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span id="btn-quote-txt">COTIZAR SERVICIO GRATIS</span>
+          </a>
+        </div>
+      </main>
+
+      <!-- OUR COMMITMENT CARD -->
+      <section class="info-card" style="margin-top: 1.25rem; border: 1px solid rgba(212, 175, 55, 0.45); background: linear-gradient(135deg, rgba(11,31,54,0.95), rgba(7,22,40,0.95));">
+        <div class="info-card-title" style="color: #D4AF37;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span id="sec-title-com">NUESTRO COMPROMISO</span>
+        </div>
+        <div style="font-weight: 800; font-size: 1.02rem; color: #FFFFFF; margin-bottom: 0.4rem;" id="txt-com-subtitle">
+          Atención personal y precios claros
+        </div>
+        <p style="font-size: 0.88rem; color: #CBD5E1; line-height: 1.5; margin-bottom: 0.85rem;" id="txt-com-desc">
+          Antes de comenzar, confirmamos contigo el servicio solicitado y su precio. Si tienes preguntas, puedes comunicarte con Claudia por mensaje o WhatsApp.
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: #DEB853; font-weight: 700;">
+          <span>✓</span>
+          <span id="txt-com-owners">Claudia coordina la atención y Fernando Salinas dirige el trabajo técnico.</span>
+        </div>
+      </section>
+
+      <!-- KEY OPERATIONAL DETAILS CARD -->
+      <section class="info-card" style="margin-top: 1.25rem;">
+        <div class="info-card-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span id="sec-title-ops">OPERATIONS &amp; SERVICE POLICIES</span>
+        </div>
+
+        <!-- Phone / Text Only -->
+        <div class="info-item-row">
+          <div class="info-icon-badge">📱</div>
+          <div class="info-content">
+            <div class="info-label" id="lbl-contact-chan">Direct Contact (Pure Text &amp; WhatsApp)</div>
+            <div class="info-value">
+              <a href="https://wa.me/16025759974" style="color: #FFF; font-weight: 700; text-decoration: none;">(602) 575-9974</a>
+              <span style="display: block; font-size: 0.76rem; color: #94A3B8;" id="txt-contact-note">All quotes and schedules coordinated with Claudia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Email -->
+        <div class="info-item-row">
+          <div class="info-icon-badge">✉️</div>
+          <div class="info-content">
+            <div class="info-label" id="lbl-email">Official Email</div>
+            <div class="info-value">
+              <a href="mailto:esparzacarpetcleaning@gmail.com" style="color: #FFF; font-weight: 700; text-decoration: none; word-break: break-all;">esparzacarpetcleaning@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Working Hours (Closed Tue) -->
+        <div class="info-item-row">
+          <div class="info-icon-badge">🕒</div>
+          <div class="info-content">
+            <div class="info-label" id="lbl-hours">Operating Schedule</div>
+            <div class="info-value">
+              <span id="txt-hours-open">Mon, Wed, Thu, Fri, Sat, Sun: <strong>7:00 AM - 5:00 PM</strong></span><br>
+              <span class="info-closed" id="txt-hours-tue">Tuesday: CLOSED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Methods (Cash & Zelle ONLY) -->
+        <div class="info-item-row">
+          <div class="info-icon-badge">💵</div>
+          <div class="info-content">
+            <div class="info-label" id="lbl-pay">Accepted Payment Methods</div>
+            <div class="info-value">
+              <span class="info-highlight" id="txt-pay-methods">✓ Cash &amp; Zelle Only</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Valley Coverage Area -->
+        <div class="info-item-row">
+          <div class="info-icon-badge">📍</div>
+          <div class="info-content">
+            <div class="info-label" id="lbl-cov">Phoenix Metropolitan Service Area</div>
+            <div class="cities-box" id="txt-cities">
+              Phoenix, Glendale, Scottsdale, Mesa, Tempe, Chandler, Gilbert, Peoria, Surprise, Avondale, Goodyear, Tolleson, Buckeye, El Mirage, Litchfield Park.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK NAVIGATION LINKS -->
+      <section class="info-card" style="margin-top: 1.25rem;">
+        <div class="info-card-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span id="sec-title-links">EXPLORE WEBSITE</span>
+        </div>
+
+        <div class="quick-links-grid">
+          <a href="index.html" class="quick-link-btn">
+            <span class="quick-link-icon">🏠</span>
+            <span id="lnk-home">Full Home</span>
+          </a>
+          <a href="galeria.html" class="quick-link-btn">
+            <span class="quick-link-icon">📸</span>
+            <span id="lnk-gal">Photo Gallery</span>
+          </a>
+          <a href="servicios.html" class="quick-link-btn">
+            <span class="quick-link-icon">✨</span>
+            <span id="lnk-srv">All Services</span>
+          </a>
+          <a href="terminos.html" class="quick-link-btn">
+            <span class="quick-link-icon">📜</span>
+            <span id="lnk-terms">Terms &amp; Policies</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SOCIAL PROFILES -->
+      <section style="margin-top: 1.25rem; text-align: center;">
+        <div style="font-size: 0.75rem; color: var(--color-text-dim); text-transform: uppercase; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 0.75rem;" id="txt-connect">
+          CONNECT &amp; REVIEWS
+        </div>
+        <div class="social-row">
+          <a href="https://wa.me/16025759974" target="_blank" rel="noopener" class="social-btn soc-wa" title="WhatsApp Chat">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100064240503033" target="_blank" rel="noopener" class="social-btn soc-fb" title="Facebook Page">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/esparzascarpetcleaning/" target="_blank" rel="noopener" class="social-btn soc-ig" title="Instagram Profile">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://nextdoor.com/pages/esparzas-carpet-cleaning-phoenix-az/" target="_blank" rel="noopener" class="social-btn soc-nd" title="Nextdoor Phoenix">
+            N
+          </a>
+        </div>
+      </section>
+
+      <!-- FOOTER COPYRIGHT -->
+      <footer class="footer-note" style="margin-top: 1.5rem;">
+        &copy; <span id="cur-year">2026</span> Esparza's Carpet Cleaning • Phoenix, AZ<br>
+        <span id="txt-footer-tap">Tap card or scan QR to save profile</span>
+      </footer>
+
+    </div>
+
+  </div>
+
+  <!-- Toast Notification Pop -->
+  <div class="toast-msg" id="toast">Contacto guardado</div>
+
+  <!-- ========================================================================
+       JAVASCRIPT LOGIC & BILINGUAL DICTIONARY
+       ======================================================================== -->
+  <script>
+    // Current year
+    document.getElementById('cur-year').textContent = new Date().getFullYear();
+
+    // Bilingual Data
+    const CARD_I18N = {
+      en: {
+        nfcActive: "NFC ACTIVE",
+        owners: "<strong>Claudia Esparza & Fernando Salinas</strong> • Founders & Operators",
+        tagline: "Deep residential & commercial steam extraction. High-grade formulas safe for your whole family and pets in Arizona.",
+        chipFamily: "👨‍👩‍👦 Family-Owned",
+        chipDirect: "⭐ Direct Owner Care",
+        chipPricing: "💬 Clear Pricing",
+        chipSteam: "♨️ 200°F+ Deep Steam",
+        btnSave: "SAVE TO CONTACTS",
+        btnSms: "Send SMS",
+        btnQuote: "REQUEST FREE ESTIMATE",
+        secCom: "OUR COMMITMENT",
+        comSubtitle: "Personal attention and clear pricing",
+        comDesc: "Before starting, we confirm the requested service and its price with you. If you have questions, you can contact Claudia by text or WhatsApp.",
+        comOwners: "Claudia coordinates customer care and Fernando Salinas directs the technical work.",
+        secOps: "OPERATIONS & SERVICE POLICIES",
+        lblContact: "Direct Contact (Pure Text & WhatsApp)",
+        contactNote: "All quotes and schedules coordinated with Claudia",
+        lblEmail: "Official Email",
+        lblHours: "Operating Schedule",
+        hoursOpen: "Mon, Wed, Thu, Fri, Sat, Sun: <strong>7:00 AM - 5:00 PM</strong>",
+        hoursTue: "Tuesday: CLOSED",
+        lblPay: "Accepted Payment Methods",
+        payMethods: "✓ Cash & Zelle Only",
+        lblCov: "Arizona Service Area",
+        cities: "Phoenix, Glendale, Scottsdale, Mesa, Tempe, Chandler, Gilbert, Peoria, Surprise, Avondale, Goodyear, Tolleson, Buckeye, El Mirage, Litchfield Park.",
+        secLinks: "EXPLORE WEBSITE",
+        lnkHome: "Full Home",
+        lnkGal: "Photo Gallery",
+        lnkSrv: "All Services",
+        lnkTerms: "Terms & Policies",
+        connect: "CONNECT & REVIEWS",
+        footerTap: "Tap card on phone to save profile",
+        vcardToast: "Contact saved! Import into your contacts."
+      },
+      es: {
+        nfcActive: "NFC ACTIVO",
+        owners: "<strong>Claudia Esparza & Fernando Salinas</strong> • Dueños y Operadores",
+        tagline: "Lavado e inyección-extracción profunda a vapor residencial y comercial. Fórmulas de alta gama seguras para tu familia y mascotas en Arizona.",
+        chipFamily: "👨‍👩‍👦 Negocio Familiar",
+        chipDirect: "⭐ Atención Directa",
+        chipPricing: "💬 Precios Claros",
+        chipSteam: "♨️ Vapor a 200°F+",
+        btnSave: "GUARDAR EN CONTACTOS",
+        btnSms: "Enviar SMS",
+        btnQuote: "COTIZAR SERVICIO GRATIS",
+        secCom: "NUESTRO COMPROMISO",
+        comSubtitle: "Atención personal y precios claros",
+        comDesc: "Antes de comenzar, confirmamos contigo el servicio solicitado y su precio. Si tienes preguntas, puedes comunicarte con Claudia por mensaje o WhatsApp.",
+        comOwners: "Claudia coordina la atención y Fernando Salinas dirige el trabajo técnico.",
+        secOps: "OPERACIONES Y POLÍTICAS DE SERVICIO",
+        lblContact: "Contacto Directo (Puro Texto y WhatsApp)",
+        contactNote: "Todas las cotizaciones y citas se coordinan con Claudia",
+        lblEmail: "Correo Oficial",
+        lblHours: "Horarios de Atención",
+        hoursOpen: "Lun, Mié, Jue, Vie, Sáb, Dom: <strong>7:00 AM - 5:00 PM</strong>",
+        hoursTue: "Martes: CERRADO",
+        lblPay: "Métodos de Pago Aceptados",
+        payMethods: "✓ Efectivo (Cash) y Zelle Únicamente",
+        lblCov: "Área de Cobertura en Arizona",
+        cities: "Phoenix, Glendale, Scottsdale, Mesa, Tempe, Chandler, Gilbert, Peoria, Surprise, Avondale, Goodyear, Tolleson, Buckeye, El Mirage, Litchfield Park.",
+        secLinks: "EXPLORAR SITIO WEB",
+        lnkHome: "Inicio Web",
+        lnkGal: "Galería de Fotos",
+        lnkSrv: "Ver Servicios",
+        lnkTerms: "Términos y Políticas",
+        connect: "CONECTAR Y RESEÑAS",
+        footerTap: "Acerca la tarjeta a tu teléfono para guardar",
+        vcardToast: "¡Contacto generado! Agrégalo a tu agenda."
+      }
+    };
+
+    let currentLang = 'en';
+
+    function setCardLang(lang) {
+      currentLang = lang;
+      const dict = CARD_I18N[lang] || CARD_I18N['en'];
+      
+      document.getElementById('btn-lang-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-lang-es').classList.toggle('active', lang === 'es');
+
+      document.getElementById('txt-nfc-active').textContent = dict.nfcActive;
+      document.getElementById('txt-owners').innerHTML = dict.owners;
+      document.getElementById('txt-tagline').textContent = dict.tagline;
+      document.getElementById('chip-family').textContent = dict.chipFamily;
+      document.getElementById('chip-direct').textContent = dict.chipDirect;
+      document.getElementById('chip-pricing').textContent = dict.chipPricing;
+      document.getElementById('chip-steam').textContent = dict.chipSteam;
+      document.getElementById('btn-save-txt').textContent = dict.btnSave;
+      document.getElementById('btn-sms-txt').textContent = dict.btnSms;
+      document.getElementById('btn-quote-txt').textContent = dict.btnQuote;
+      if (document.getElementById('sec-title-com')) document.getElementById('sec-title-com').textContent = dict.secCom;
+      if (document.getElementById('txt-com-subtitle')) document.getElementById('txt-com-subtitle').textContent = dict.comSubtitle;
+      if (document.getElementById('txt-com-desc')) document.getElementById('txt-com-desc').textContent = dict.comDesc;
+      if (document.getElementById('txt-com-owners')) document.getElementById('txt-com-owners').textContent = dict.comOwners;
+      document.getElementById('sec-title-ops').textContent = dict.secOps;
+      document.getElementById('lbl-contact-chan').textContent = dict.lblContact;
+      document.getElementById('txt-contact-note').textContent = dict.contactNote;
+      document.getElementById('lbl-email').textContent = dict.lblEmail;
+      document.getElementById('lbl-hours').textContent = dict.lblHours;
+      document.getElementById('txt-hours-open').innerHTML = dict.hoursOpen;
+      document.getElementById('txt-hours-tue').textContent = dict.hoursTue;
+      document.getElementById('lbl-pay').textContent = dict.lblPay;
+      document.getElementById('txt-pay-methods').textContent = dict.payMethods;
+      document.getElementById('lbl-cov').textContent = dict.lblCov;
+      document.getElementById('sec-title-links').textContent = dict.secLinks;
+      document.getElementById('lnk-home').textContent = dict.lnkHome;
+      document.getElementById('lnk-gal').textContent = dict.lnkGal;
+      document.getElementById('lnk-srv').textContent = dict.lnkSrv;
+      document.getElementById('lnk-terms').textContent = dict.lnkTerms;
+      document.getElementById('txt-connect').textContent = dict.connect;
+      document.getElementById('txt-footer-tap').textContent = dict.footerTap;
+    }
+
+    // vCard (.VCF) Generator for iPhone & Android
+    function downloadVCard() {
+      const currentCardUrl = window.location.href.split('#')[0];
+      const vcardData = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "FN:Claudia Esparza & Fernando Salinas (Esparza's Carpet Cleaning)",
+        "N:Esparza;Claudia;;;",
+        "ORG:Esparza's Carpet Cleaning",
+        "TITLE:Dueños y Operadores",
+        "TEL;TYPE=CELL,VOICE,MSG:+16025759974",
+        "EMAIL;TYPE=WORK,INTERNET:esparzacarpetcleaning@gmail.com",
+        "URL:" + currentCardUrl,
+        "ADR;TYPE=WORK:;;Phoenix Metropolitan Area;Phoenix;AZ;;United States",
+        "NOTE:Esparza's Carpet Cleaning: Atencion cercana, cotizaciones claras antes de comenzar y servicio cuidadoso para alfombras, salas y colchones en Arizona. Mensajes y WhatsApp al (602) 575-9974. Pagos: Efectivo y Zelle. Martes cerrado.",
+        "END:VCARD"
+      ].join("\r\n");
+
+      const blob = new Blob([vcardData], { type: "text/vcard;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "Esparzas-Carpet-Cleaning.vcf");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+
+      showToast(CARD_I18N[currentLang].vcardToast);
+    }
+
+    // Toast message helper
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    // Default to Spanish
+    setCardLang('es');
+  </script>
+</body>
+</html>

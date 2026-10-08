@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before &amp; After Gallery | Esparza's Carpet Cleaning</title>
+  <meta name="description" content="Interactive Before &amp; After slider gallery from Esparza's Carpet Cleaning. Compare real transformations of carpets, couches, mattresses, tile &amp; grout in Phoenix, AZ.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- Top Notice Bar -->
+  <div class="top-notice-bar">
+    <div class="container">
+      <div class="top-notice-info">
+        <span class="top-notice-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="top_area">Phoenix Metropolitan Area &amp; Surrounding Cities</span>
+        </span>
+        <span class="top-notice-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span data-i18n="top_hours">Mon, Wed - Sun: 7:00 AM - 5:00 PM (Closed Tue)</span>
+        </span>
+        <span class="top-notice-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span data-i18n="top_direct">Text / WhatsApp: (602) 575-9974</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" title="Esparza's Carpet Cleaning">
+        <img src="assets/images/logo-spartan.png" alt="Esparza's Carpet Cleaning Logo" width="60" height="60" data-i18n-alt="logo_main_alt">
+        <div class="logo-text-group">
+          <span class="logo-main-text">ESPARZA'S</span>
+          <span class="logo-sub-text">CARPET CLEANING</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-i18n="nav_inicio">HOME</a></li>
+          <li><a href="servicios.html" class="nav-link" data-i18n="nav_servicios">SERVICES</a></li>
+          <li><a href="index.html#tarifas" class="nav-link" data-i18n="nav_tarifas">FREE ESTIMATE</a></li>
+          <li><a href="galeria.html" class="nav-link active" data-i18n="nav_galeria">GALLERY</a></li>
+          <li><a href="index.html#promociones" class="nav-link" data-i18n="nav_promociones">SPECIAL OFFERS</a></li>
+          <li><a href="index.html#comentarios" class="nav-link" data-i18n="nav_resenas">REVIEWS</a></li>
+          <li><a href="nosotros.html" class="nav-link" data-i18n="nav_nosotros">ABOUT US</a></li>
+          <li><a href="contacto.html" class="nav-link" data-i18n="nav_contacto">CONTACT</a></li>
+        </ul>
+
+        <!-- Language Switcher (Desktop) -->
+        <div class="lang-switch-container">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <span class="lang-separator">|</span>
+          <button type="button" class="lang-btn" data-lang="es">ES</button>
+        </div>
+
+        <a href="solicitud.html" class="btn-nav-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.53-.12.21.08 1.33.63 1.56.74.23.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/></svg>
+          <span data-i18n="nav_cta">REQUEST SERVICE</span>
+        </a>
+      </nav>
+
+      <button class="mobile-toggle-btn" aria-label="Mobile Navigation Menu" data-i18n-aria="nav_menu_aria">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-drawer">
+    <!-- Language Switcher (Mobile Drawer) -->
+    <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+      <div class="lang-switch-container">
+        <button type="button" class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-separator">|</span>
+        <button type="button" class="lang-btn" data-lang="es">ES</button>
+      </div>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="nav-link" data-i18n="nav_inicio">HOME</a></li>
+      <li><a href="servicios.html" class="nav-link" data-i18n="nav_servicios">SERVICES</a></li>
+      <li><a href="index.html#tarifas" class="nav-link" data-i18n="nav_tarifas">FREE ESTIMATE</a></li>
+      <li><a href="galeria.html" class="nav-link active" data-i18n="nav_galeria">GALLERY</a></li>
+      <li><a href="index.html#promociones" class="nav-link" data-i18n="nav_promociones">SPECIAL OFFERS</a></li>
+      <li><a href="index.html#comentarios" class="nav-link" data-i18n="nav_resenas">REVIEWS</a></li>
+      <li><a href="nosotros.html" class="nav-link" data-i18n="nav_nosotros">ABOUT US</a></li>
+      <li><a href="contacto.html" class="nav-link" data-i18n="nav_contacto">CONTACT</a></li>
+    </ul>
+    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+      <a href="solicitud.html" class="btn-nav-gold" style="width: 100%; justify-content: center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.53-.12.21.08 1.33.63 1.56.74.23.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/></svg>
+        <span data-i18n="nav_cta">REQUEST SERVICE</span>
+      </a>
+      <a href="https://wa.me/16025759974" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-i18n="nav_call">WhatsApp: (602) 575-9974</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="section-dark" style="position: relative; overflow: hidden; padding: 4.5rem 0 4rem 0; background: radial-gradient(120% 120% at 50% 10%, #0c2340 0%, #061325 100%);">
+      <!-- Ambient Glow Orbs -->
+      <div class="ambient-glow-orb orb-amber" style="top: -60px; right: 10%; width: 420px; height: 420px;"></div>
+      <div class="ambient-glow-orb orb-azure" style="bottom: -80px; left: 6%; width: 440px; height: 440px;"></div>
+      <div class="ambient-glow-orb orb-navy" style="top: 35%; left: 45%; width: 340px; height: 340px;"></div>
+
+      <div class="container" style="text-align: center; position: relative; z-index: 2;">
+        <span class="section-badge gold reveal-on-scroll" data-i18n="gal_badge">Real Transformations</span>
+        <h1 class="section-title reveal-on-scroll stagger-1" style="font-size: 2.9rem;" data-i18n="gal_title">BEFORE &amp; AFTER <span class="highlight">GALLERY</span></h1>
+        <p class="section-subtitle reveal-on-scroll stagger-2" style="max-width: 780px; margin: 0 auto 1.5rem auto;" data-i18n="gal_sub">
+          Slide the center handle horizontally to compare before and after. Real photos from our steam cleaning jobs across the Phoenix Valley.
+        </p>
+      </div>
+    </section>
+
+    <!-- AUTOPLAY VIDEO SHOWCASE SECTION (SE REPRODUCE AUTOMÁTICAMENTE AL LLEGAR AQUÍ) -->
+    <section class="section section-dark video-showcase-section" id="video-demostracion" style="position: relative; overflow: hidden; background: radial-gradient(100% 100% at 50% 20%, #0d2847 0%, #061325 100%); padding: 4.5rem 0 5rem 0;">
+      <!-- Ambient Glow Orbs -->
+      <div class="ambient-glow-orb orb-amber" style="top: -40px; right: 15%; width: 380px; height: 380px;"></div>
+      <div class="ambient-glow-orb orb-azure" style="bottom: -60px; left: 10%; width: 400px; height: 400px;"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        
+        <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem auto;">
+          <span class="section-badge gold reveal-on-scroll" data-i18n="video_sec_badge">Live Extraction Demo</span>
+          <h2 class="section-title reveal-on-scroll stagger-1" style="font-size: 2.3rem; margin-bottom: 0.85rem;" data-i18n="video_sec_title">SEE OUR HIGH-HEAT STEAM <span class="highlight">IN ACTION</span></h2>
+          <p class="section-subtitle reveal-on-scroll stagger-2" style="font-size: 1.05rem; line-height: 1.6; margin: 0 auto;" data-i18n="video_sec_sub">
+            Watch our commercial truck-mounted and high-pressure steam extraction liquefy and extract years of embedded dirt instantly. Video plays automatically as you scroll into view.
+          </p>
+        </div>
+
+        <!-- Video Player Card Container -->
+        <div class="video-showcase-wrapper reveal-on-scroll stagger-2" style="max-width: 960px; margin: 0 auto; border-radius: var(--radius-xl); overflow: hidden; box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(222, 184, 83, 0.2); border: 2px solid rgba(222, 184, 83, 0.45); background: #071628; position: relative;">
+          
+          <!-- Video Frame (Aspect Ratio 16:9) -->
+          <div class="video-frame-container" style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 540px; background: #000000; overflow: hidden;">
+            <!-- ESPACIO PARA TU VIDEO: Coloca tu video en assets/videos/demo-limpieza.mp4 -->
+            <video 
+              id="showcase-scroll-video" 
+              class="auto-scroll-video" 
+              autoplay
+              muted 
+              playsinline 
+              loop 
+              preload="metadata" 
+              poster="assets/images/carpet-wand-action.jpg"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            >
+              <source src="assets/videos/video.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
+            <!-- Bottom Floating Controls Overlay -->
+            <div class="video-controls-overlay" style="position: absolute; bottom: 16px; left: 16px; right: 16px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; z-index: 10; flex-wrap: wrap; gap: 0.5rem;">
+              
+              <!-- Quick Info Badge -->
+              <div style="pointer-events: auto; background: rgba(11, 31, 54, 0.85); backdrop-filter: blur(8px); padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(222, 184, 83, 0.35); display: inline-flex; align-items: center; gap: 8px;">
+                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #10B981;"></span>
+                <span style="color: #FFFFFF; font-size: 0.8rem; font-weight: 700;" data-i18n="video_tech_badge">Industrial Steam Wand (200°F+)</span>
+              </div>
+
+              <!-- Mute / Unmute Interactive Toggle -->
+              <button type="button" class="video-sound-toggle-btn" style="pointer-events: auto; background: rgba(11, 31, 54, 0.88); border: 1.5px solid rgba(222, 184, 83, 0.6); color: #DEB853; padding: 7px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; transition: all 0.2s ease; backdrop-filter: blur(8px);" aria-label="Toggle sound">
+                <span class="sound-icon-holder" style="display: inline-flex; align-items: center;">
+                  <svg class="sound-icon-muted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+                  <svg class="sound-icon-unmuted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                </span>
+                <span class="sound-toggle-text" data-i18n="video_sound_enable">Sound Muted (Click to Unmute)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Video Footer Specs Bar -->
+          <div style="background: rgba(11, 31, 54, 0.98); padding: 1.15rem 1.75rem; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.85rem;">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(37, 211, 102, 0.15); border: 1px solid rgba(37, 211, 102, 0.35); display: flex; align-items: center; justify-content: center; color: #25D366; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <div>
+                <strong style="color: #FFFFFF; font-size: 0.92rem; display: block;" data-i18n="video_feat2_title">Safe Professional Cleaning</strong>
+                <span style="color: #94A3B8; font-size: 0.8rem;" data-i18n="video_feat2_sub">Safe for children and pets</span>
+              </div>
+            </div>
+
+            <div>
+              <a href="solicitud.html" class="btn btn-primary" style="padding: 0.7rem 1.6rem; font-size: 0.9rem;" data-i18n="video_cta_btn">
+                Request Service Today
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERÍA CON FILTROS INTERACTIVOS -->
+    <section class="section section-light">
+      <div class="container">
+        
+        <!-- Filter Tabs -->
+        <div class="gallery-filters reveal-on-scroll">
+          <button class="gallery-filter-btn active" data-filter="all" data-i18n="gal_filter_all">All Projects</button>
+          <button class="gallery-filter-btn" data-filter="alfombras" data-i18n="gal_filter_carpets">Carpets</button>
+          <button class="gallery-filter-btn" data-filter="sofas" data-i18n="gal_filter_sofas">Couches &amp; Sofas</button>
+          <button class="gallery-filter-btn" data-filter="colchones" data-i18n="gal_filter_mattress">Mattresses</button>
+          <button class="gallery-filter-btn" data-filter="pisos" data-i18n="gal_filter_floors">Tile &amp; Grout</button>
+          <button class="gallery-filter-btn" data-filter="vehiculos" data-i18n="gal_filter_cars">Auto Interiors</button>
+          <button class="gallery-filter-btn" data-filter="comercial" data-i18n="gal_filter_commercial">Commercial</button>
+        </div>
+
+        <!-- Gallery Grid of Before/After Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;" id="gallery-grid">
+
+          <!-- Card 16: Master Suite Bedroom with Chevron Grooming Lines (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-1" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-chevron-bed1-before.jpg" alt="Master bedroom carpet before cleaning with traffic soil" data-i18n-alt="gal_card16_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-chevron-bed1-after.jpg" alt="Master bedroom carpet restored with signature chevron triangle grooming lines" data-i18n-alt="gal_card16_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Master Bedroom Chevron Carpet Slider" data-i18n-aria="gal_slider_16">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card16_loc">Phoenix, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card16_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card16_title">Master Suite Carpet Restoration with Chevron Grooming</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card16_desc">
+                Deep steam extraction lifting stubborn foot traffic stains, groomed with signature triangular chevron patterns.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 1: Main Hallway (Carpets) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-1" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-hallway-before.jpg" alt="Carpet hallway with heavy dark foot-traffic pathways before cleaning" data-i18n-alt="gal_card1_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-hallway-after.jpg" alt="Carpet hallway fully restored and spotless after steam cleaning" data-i18n-alt="gal_card1_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Hallway Carpet Before and After Slider" data-i18n-aria="gal_slider_1">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card1_loc">Phoenix, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card1_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card1_title">Main Hallway Carpet Restoration</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card1_desc">
+                Deep removal of heavy traffic pathways, dark stains, and embedded soil in a central connecting hallway.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+                    <!-- Card 17: Central Hallway Corridor with Chevron Triangle Grooming (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-chevron-hallway-before.jpg" alt="Main hallway carpet with dark traffic pathways before cleaning" data-i18n-alt="gal_card17_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-chevron-hallway-after.jpg" alt="Main hallway carpet pristine with triangular grooming finish" data-i18n-alt="gal_card17_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Hallway Chevron Carpet Slider" data-i18n-aria="gal_slider_17">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card17_loc">Glendale, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card17_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card17_title">Central Hallway Corridor with Precision Chevron Grooming</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card17_desc">
+                Deep high-traffic carpet revival along main residential hallway, lifting soil and leaving plush, pristine triangular grooming lines.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Master Bedroom (Carpets) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-room-before.jpg" alt="Bedroom carpet soiled with dull fibers before cleaning" data-i18n-alt="gal_card2_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-room-after.jpg" alt="Bedroom carpet deep cleaned and fibers restored" data-i18n-alt="gal_card2_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Bedroom Carpet Before and After Slider" data-i18n-aria="gal_slider_2">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card2_loc">Glendale, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card2_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card2_title">Bedroom Carpet Deep Cleaning</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card2_desc">
+                Complete restoration of original carpet color and soft fiber texture using high-heat steam extraction.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Carpeted Stairs (Carpets) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-3" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-stairs-before.jpg" alt="Carpeted stairs with heavy ground-in foot soil before cleaning" data-i18n-alt="gal_card3_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-stairs-after.jpg" alt="Carpeted stairs deep steam cleaned and renewed" data-i18n-alt="gal_card3_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Staircase Carpet Before and After Slider" data-i18n-aria="gal_slider_3">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card3_loc">Peoria, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card3_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card3_title">Intensive Carpeted Stairs Cleaning</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card3_desc">
+                Step-by-step high-pressure extraction removing stubborn shoe soil and wear from stairs and landings.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Family Sectional Couch (Furniture) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-1" data-category="sofas" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/real-sectional-before.jpg" alt="Family sectional sofa with accumulated dirt and oils before cleaning" data-i18n-alt="gal_card4_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/real-sectional-after.jpg" alt="Family sectional sofa spotless, stain-free and deodorized" data-i18n-alt="gal_card4_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Sectional Couch Before and After Slider" data-i18n-aria="gal_slider_4">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card4_loc">Scottsdale, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card4_tag">Furniture</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card4_title">Family Sectional Couch Cleaning</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card4_desc">
+                Full microfiber sectional upholstery steam extraction, eliminating daily soil, food marks, and body oils.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+                    <!-- Card 18: Guest Bedroom Carpet with Crisp Steam Grooming (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-3" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-chevron-bed2-before.jpg" alt="Guest room carpet soiled before extraction" data-i18n-alt="gal_card18_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-chevron-bed2-after.jpg" alt="Guest room carpet restored with geometric grooming lines" data-i18n-alt="gal_card18_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Guest Bedroom Chevron Carpet Slider" data-i18n-aria="gal_slider_18">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card18_loc">Peoria, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card18_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card18_title">Guest Bedroom Deep Steam Extraction & Geometric Grooming</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card18_desc">
+                High-pressure hot steam extraction pulling out ground-in soil, restoring soft carpet texture with geometric groom lines.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 5: Loveseat Sofa (Furniture) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="sofas" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/real-sofa-before.jpg" alt="Loveseat sofa cushions with beverage spills and dark spots before cleaning" data-i18n-alt="gal_card5_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/real-sofa-after.jpg" alt="Loveseat sofa completely spot-treated, cleaned and refreshed" data-i18n-alt="gal_card5_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Loveseat Couch Before and After Slider" data-i18n-aria="gal_slider_5">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card5_loc">Tempe, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card5_tag">Furniture</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card5_title">Deep Stain Removal on Loveseat Sofa</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card5_desc">
+                Removal of dark spills and dirt from plush couch cushions and armrests with zero sticky residue.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+                    <!-- Card 19: High-Traffic Living Area Carpet Transformation (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-1" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-transformation-1-before.jpg" alt="Living area carpet with dark stains and traffic dirt before cleaning" data-i18n-alt="gal_card19_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-transformation-1-after.jpg" alt="Living area carpet spotless and refreshed after steam extraction" data-i18n-alt="gal_card19_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Living Area Carpet Transformation Slider" data-i18n-aria="gal_slider_19">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card19_loc">Scottsdale, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card19_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card19_title">Living Area Carpet Transformation & Deep Soil Extraction</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card19_desc">
+                Intensive extraction removing dark traffic patterns and food marks across open living room floor plan.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 6: Tile & Grout (Pisos) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-3" data-category="pisos" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/PISOANTES.jpg" alt="Tile floor with darkened, dirty grout lines before cleaning" data-i18n-alt="gal_card6_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/PISODESPUES.jpeg" alt="Tile floor and grout lines brightened and restored" data-i18n-alt="gal_card6_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Tile and Grout Before and After Slider" data-i18n-aria="gal_slider_6">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card6_loc">Mesa, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card6_tag">Tile &amp; Grout</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card6_title">Tile &amp; Grout Deep Restoration</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card6_desc">
+                High-pressure rotary steam extraction lifting years of built-up grease and restoring clean grout lines.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+                    <!-- Card 22: Rotovac Rotary Deep Tile & Grout Power Scrub (Tile & Grout) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="pisos" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="gallery-single-showcase ba-aspect-gallery" style="position: relative; overflow: hidden; background: #071628;">
+              <img src="assets/images/tile-rotovac-action.jpg" alt="Rotovac 360 rotary steam scrub on ceramic tile and grout" data-i18n-alt="gal_card22_img_alt" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--transition-slow);">
+              <span class="ba-label ba-label-after" style="left: auto; right: 12px; background: rgba(37, 211, 102, 0.95); letter-spacing: 0.08em;" data-i18n="gal_card22_badge">ROTOVAC 360°</span>
+              <span class="gallery-showcase-pill" style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.85); color: #DEB853; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; backdrop-filter: blur(4px); display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgba(222, 184, 83, 0.3);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
+                <span data-i18n="gal_card22_pill">HIGH-PRESSURE ROTARY</span>
+              </span>
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card22_loc">Gilbert, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card22_tag">Tile &amp; Grout</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card22_title">Rotovac Rotary Deep Tile &amp; Grout Power Scrub</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card22_desc">
+                High-pressure 360-degree rotary steam extraction deep-cleaning porous grout lines and textured ceramic tile.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 7: Mattresses (Colchones) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-1" data-category="colchones" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/MATTRESSES.jpg" alt="Mattress with sweat rings and stains before sanitization" data-i18n-alt="gal_card7_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/mattress-after.jpg" alt="Mattress sanitized, stain-lightened and allergen-free" data-i18n-alt="gal_card7_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Mattress Sanitization Before and After Slider" data-i18n-aria="gal_slider_7">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card7_loc">Chandler, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card7_tag">Mattresses</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card7_title">Thermal Mattress Deep Sanitization</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card7_desc">
+                Complete elimination of sweat stains, dust mites, and microscopic allergens with professional sanitizers.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+                    <!-- Card 20: Family Room Carpet High-Traffic Revival (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-transformation-2-before.jpg" alt="Family room carpet with dull matted fibers before cleaning" data-i18n-alt="gal_card20_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-transformation-2-after.jpg" alt="Family room carpet vibrant and fluffed after hot steam extraction" data-i18n-alt="gal_card20_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Family Room Carpet Slider" data-i18n-aria="gal_slider_20">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card20_loc">Mesa, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card20_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card20_title">Family Room Carpet High-Traffic Revival</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card20_desc">
+                High-heat commercial truck-mounted extraction breaking down grease and daily dirt in family living areas.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 8: Vehicle Seats (Vehicles) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="vehiculos" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/car-seats-before.jpg" alt="Car seats with ground-in Arizona dirt and drink spills before cleaning" data-i18n-alt="gal_card8_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/car-seats-after.jpg" alt="Car seats deep extracted and restored to clean fabric" data-i18n-alt="gal_card8_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Car Seats Before and After Slider" data-i18n-aria="gal_slider_8">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card8_loc">Phoenix, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card8_tag">Vehicles</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card8_title">Steam Wash on Upholstered Car Seats</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card8_desc">
+                Intensive extraction across vehicle fabric seats pulling out Arizona desert dirt and beverage spills.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 9: Armrest & Console (Vehicles) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-3" data-category="vehiculos" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/car-armrest-before.jpg" alt="Car center console and armrest with body grease and dirt before cleaning" data-i18n-alt="gal_card9_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/car-armrest-after.jpg" alt="Car center console and armrest deep cleaned and refreshed" data-i18n-alt="gal_card9_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Car Armrest Before and After Slider" data-i18n-aria="gal_slider_9">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card9_loc">Gilbert, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card9_tag">Vehicles</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card9_title">Vehicle Armrest &amp; Console Stain Removal</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card9_desc">
+                Targeted technical extraction on high-contact auto interior surfaces, lifting heavy oils and dirt.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+          <!-- Card 10: Restaurant Booth & Diner Banquette (Sofás & Muebles) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-1" data-category="sofas" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/sillon sucio.jpg" alt="Commercial diner booth before steam stain extraction" data-i18n-alt="gal_card10_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/sillonlimpio.jpg" alt="Commercial diner booth restored and stain-free" data-i18n-alt="gal_card10_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Restaurant Booth Before and After Slider" data-i18n-aria="gal_slider_10">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card10_loc">Avondale, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card10_tag">Commercial Booth</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card10_title">Commercial Diner Booth &amp; Bench Seat Stain Removal</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card10_desc">
+                High-suction steam extraction lifting stubborn beverage spills and deep oils from patterned cushion fabric.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+                    <!-- Card 21: Dining Area Carpet Deep Steam Recovery (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-3" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/carpet-transformation-3-before.jpg" alt="Dining area carpet with drink spills and crumbs before cleaning" data-i18n-alt="gal_card21_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/carpet-transformation-3-after.jpg" alt="Dining area carpet thoroughly cleaned and sanitized" data-i18n-alt="gal_card21_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Dining Area Carpet Slider" data-i18n-aria="gal_slider_21">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card21_loc">Chandler, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card21_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card21_title">Dining Area Carpet Deep Steam Recovery</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card21_desc">
+                Targeted stain removal lifting liquid and food spills under dining room furniture, reviving natural pile.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 11: Heavy Traffic Bedroom Carpet (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/TAPETESUCIO.jpg" alt="Bedroom carpet with severe dark traffic paths before cleaning" data-i18n-alt="gal_card11_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/TAPETELIMPIO.jpg" alt="Bedroom carpet completely cleaned and restored" data-i18n-alt="gal_card11_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Heavy Traffic Carpet Before and After Slider" data-i18n-aria="gal_slider_11">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card11_loc">Surprise, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card11_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card11_title">Heavy Foot-Traffic Bedroom Carpet Transformation</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card11_desc">
+                Dramatic transformation of dark ground-in footpaths and heavy soil, reviving original color and soft carpet pile.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 12: Living Room Carpet Stain & Pet Tracks (Alfombras) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-3" data-category="alfombras" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/salasucia (1).jpg" alt="Living room carpet before cleaning with stains and debris" data-i18n-alt="gal_card12_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/salalimpia.jpg" alt="Living room carpet pristine with groom lines" data-i18n-alt="gal_card12_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Living Room Carpet Before and After Slider" data-i18n-aria="gal_slider_12">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card12_loc">Goodyear, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card12_tag">Carpets</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card12_title">Living Room Carpet Stain &amp; Pet Print Extraction</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card12_desc">
+                Deep hot water extraction lifting food spills, debris, and pet paw tracks across open living room, groomed to perfection.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 13: Dining Room Chairs Upholstery (Sofás & Muebles) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-1" data-category="sofas" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/SILLASSSS.jpeg" alt="Wood dining chair fabric cushion heavily stained" data-i18n-alt="gal_card13_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/SILLASS.jpeg" alt="Wood dining chair fabric cushion clean and stain-free" data-i18n-alt="gal_card13_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Dining Chair Before and After Slider" data-i18n-aria="gal_slider_13">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card13_loc">Paradise Valley, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card13_tag">Dining Chairs</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card13_title">Dining Room Fabric Chair Cushion Stain Removal</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card13_desc">
+                Deep thermal extraction on upholstered wooden dining chairs, lifting food spills, grease, and restoring fabric freshness.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 14: Breathable Mesh Auto Bucket Seat (Vehículos) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-2" data-category="vehiculos" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="before-after-container ba-aspect-gallery">
+              <span class="ba-label ba-label-after" data-i18n="ba_after">AFTER</span>
+              <span class="ba-label ba-label-before" data-i18n="ba_before">BEFORE</span>
+              <img src="assets/images/WhatsApp Image 2026-08-23 at 9.39.32 AM.jpeg" alt="Vehicle cloth seat stained with heavy water tide marks" data-i18n-alt="gal_card14_img_before" class="ba-image ba-image-before">
+              <img src="assets/images/WhatsApp Image 2026-08-23 at 9.39.32 AM (1).jpeg" alt="Vehicle cloth seat completely clean and restored" data-i18n-alt="gal_card14_img_after" class="ba-image ba-image-after">
+              <div class="ba-handle">
+                <div class="ba-handle-button"><span class="ba-handle-arrows">&lsaquo;&rsaquo;</span></div>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Mesh Car Seat Before and After Slider" data-i18n-aria="gal_slider_14">
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card14_loc">Tempe, AZ</span>
+                <span style="font-size: 0.8rem; background: #E2E8F0; padding: 2px 8px; border-radius: 4px; font-weight: 600;" data-i18n="gal_card14_tag">Auto Interiors</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card14_title">Breathable Cloth Car Seat Water Mark &amp; Spill Extraction</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card14_desc">
+                Thermal steam extraction pulling out deep liquid tide marks and dirt rings from light-colored mesh automotive upholstery.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+
+          <!-- Card 15: Commercial Auditorium & Turbo Air Dryers (Comercial) -->
+          <div class="gallery-item-card reveal-on-scroll stagger-3" data-category="comercial" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-border-light); transition: transform var(--transition-normal), box-shadow var(--transition-normal);">
+            <div class="gallery-single-showcase ba-aspect-gallery" style="position: relative; overflow: hidden; background: #071628;">
+              <img src="assets/images/commercial-carpet-drying.jpg" alt="Commercial carpet steam cleaning and rapid turbo drying in Phoenix" data-i18n-alt="gal_card15_img_alt" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--transition-slow);">
+              <span class="ba-label ba-label-after" style="left: auto; right: 12px; background: rgba(14, 165, 233, 0.95); letter-spacing: 0.08em;" data-i18n="gal_card15_badge">FAST DRYING</span>
+              <span class="gallery-showcase-pill" style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.85); color: #DEB853; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; backdrop-filter: blur(4px); display: inline-flex; align-items: center; gap: 6px; border: 1px solid rgba(222, 184, 83, 0.3);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <span data-i18n="gal_card15_pill">INDUSTRIAL TURBO FANS</span>
+              </span>
+            </div>
+            <div style="padding: 1.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase;" data-i18n="gal_card15_loc">Phoenix Metro</span>
+                <span style="font-size: 0.8rem; background: #E0F2FE; color: #0369A1; padding: 2px 8px; border-radius: 4px; font-weight: 700;" data-i18n="gal_card15_tag">Commercial</span>
+              </div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; margin-bottom: 0.6rem; color: var(--color-primary);" data-i18n="gal_card15_title">Commercial Carpet Steam Cleaning &amp; High-Velocity Turbo Dryers</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; line-height: 1.5;" data-i18n="gal_card15_desc">
+                Deep steam extraction in commercial auditorium &amp; simulator venue, accelerated with 3 industrial centrifugal air movers for ultra-rapid dry times.
+              </p>
+              <a href="solicitud.html" class="btn btn-outline-gold" style="width: 100%;" data-i18n="gal_card_btn">Request Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="assets/images/logo-spartan.png" alt="Esparza's Logo" width="38" height="38" style="width: 38px; height: 38px; object-fit: contain;" data-i18n-alt="logo_footer_alt">
+            <div class="logo-text-group">
+              <span class="logo-main-text" style="font-family: 'Montserrat', var(--font-heading); font-size: 1.3rem; font-weight: 900; color: #FFFFFF; line-height: 1.05; text-transform: uppercase;">ESPARZA'S</span>
+              <span class="logo-sub-text" style="font-size: 0.72rem; font-weight: 800; color: #DEB853; text-transform: uppercase; letter-spacing: 0.18em;">CARPET CLEANING</span>
+            </div>
+          </a>
+          <p data-i18n="footer_desc_gal">
+            Real photo gallery of transformations across Phoenix Valley. We restore original color, freshness, and cleanliness to your fabrics.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_nav_title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" data-i18n="nav_inicio">Home</a></li>
+            <li><a href="servicios.html" data-i18n="nav_servicios">Services</a></li>
+            <li><a href="galeria.html" data-i18n="nav_galeria">Gallery</a></li>
+            <li><a href="solicitud.html" data-i18n="nav_cta">Request Service</a></li>
+            <li><a href="nosotros.html" data-i18n="nav_nosotros">About Us</a></li>
+            <li><a href="contacto.html" data-i18n="nav_contacto">Contact</a></li>
+            <li><a href="terminos.html" data-i18n="footer_terms">Terms &amp; Policies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_services_title">Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="servicios.html#alfombras" data-i18n="footer_srv_carpet">Carpet Cleaning</a></li>
+            <li><a href="servicios.html#sofas" data-i18n="footer_srv_sofas">Sofas &amp; Upholstery</a></li>
+            <li><a href="servicios.html#colchones" data-i18n="footer_srv_mattress">Mattresses</a></li>
+            <li><a href="servicios.html#pisos" data-i18n="footer_srv_tile">Tile &amp; Grout</a></li>
+            <li><a href="servicios.html#vehiculos" data-i18n="footer_srv_cars">Vehicle Interiors</a></li>
+            <li><a href="servicios.html#comercial" data-i18n="footer_srv_comm">Commercial &amp; Offices</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_contact_title">Direct Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <div>
+                <strong data-i18n="footer_lbl_phone">Text / WhatsApp:</strong><br>
+                <a href="https://wa.me/16025759974" target="_blank" rel="noopener" style="color:#FFFFFF; font-weight:700;">(602) 575-9974</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <strong data-i18n="footer_lbl_email">Email Address:</strong><br>
+                <a href="mailto:esparzacarpetcleaning@gmail.com">esparzacarpetcleaning@gmail.com</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong data-i18n="footer_lbl_hours">Business Hours:</strong><br>
+                <span data-i18n="footer_hours_val">Mon, Wed - Sun: 7:00 AM - 5:00 PM (Closed Tue)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> Esparza's Carpet Cleaning. All rights reserved.
+        </div>
+        <div class="footer-social-links" style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="https://wa.me/16025759974" target="_blank" rel="noopener" class="social-icon-btn" title="WhatsApp Directo" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;overflow:hidden;">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="12" fill="#25D366"/>
+              <path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100064240503033" target="_blank" rel="noopener" class="social-icon-btn" title="Facebook Oficial" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#1877F2;color:#FFF;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/esparzascarpetcleaning/" target="_blank" rel="noopener" class="social-icon-btn" title="Instagram Oficial" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);color:#FFF;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://nextdoor.com/pages/esparzas-carpet-cleaning-phoenix-az/" target="_blank" rel="noopener" class="social-icon-btn" title="Nextdoor Phoenix" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#00B246;color:#FFF;font-weight:900;font-size:16px;">
+            <span style="font-family:sans-serif;font-weight:900;">N</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING STICKY CTA DOCK (WhatsApp & Direct SMS) -->
+  <div class="floating-actions-dock">
+    <a href="https://wa.me/16025759974?text=Hola%20Esparza's%20Carpet%20Cleaning!%20Vi%20su%20galer%C3%ADa%20y%20deseo%20agendar%20un%20servicio" target="_blank" rel="noopener" class="dock-btn dock-btn-schedule" title="WhatsApp">
+      <svg class="dock-btn-icon" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="12" fill="#25D366"/>
+        <path d="M12.04 4.5c-4.14 0-7.5 3.36-7.5 7.5 0 1.33.35 2.62 1.01 3.75L4.5 19.5l3.86-1.01c1.1.6 2.34.91 3.68.91 4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5zm4.45 10.63c-.19.53-1.09 1.01-1.54 1.07-.39.06-.9.08-1.46-.1-.34-.11-.79-.26-1.37-.51-2.43-1.05-4-3.52-4.12-3.68-.12-.16-.99-1.32-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.21.49.71 1.74.77 1.87.06.13.1.28.02.44-.08.16-.12.26-.24.4-.12.14-.26.31-.37.42-.12.12-.25.25-.11.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.18.44.27.06.1.06.57-.13 1.1z" fill="#FFFFFF"/>
+      </svg>
+      <span class="dock-btn-label" data-i18n="dock_schedule">Enviar Mensaje</span>
+    </a>
+    <a href="sms:16025759974" class="dock-btn dock-btn-call" title="Text Us">
+      <svg class="dock-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+      <span class="dock-btn-label" data-i18n="dock_call">Text Us</span>
+    </a>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/before-after.js"></script>
+  <script src="js/gallery-filter.js"></script>
+</body>
+</html>
