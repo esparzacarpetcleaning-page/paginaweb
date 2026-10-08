@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chairBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="upholstery" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#chairBg)"/>
+
+  <!-- Modern Upholstered Dining Chair -->
+  <g transform="translate(160, 40)">
+    <!-- Wooden Legs -->
+    <line x1="80" y1="260" x2="30" y2="390" stroke="#78350F" stroke-width="12" stroke-linecap="round"/>
+    <line x1="200" y1="260" x2="250" y2="390" stroke="#78350F" stroke-width="12" stroke-linecap="round"/>
+    <line x1="100" y1="260" x2="70" y2="370" stroke="#451A03" stroke-width="10" stroke-linecap="round"/>
+    <line x1="180" y1="260" x2="210" y2="370" stroke="#451A03" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Padded Curved Backrest -->
+    <path d="M 50,40 C 50,20 230,20 230,40 L 215,220 C 215,235 65,235 65,220 Z" fill="url(#upholstery)" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="140" cy="50" rx="70" ry="15" fill="#CBD5E1" opacity="0.3"/>
+
+    <!-- Padded Seat Cushion -->
+    <ellipse cx="140" cy="235" rx="100" ry="32" fill="#64748B" stroke="#475569" stroke-width="3"/>
+    <ellipse cx="140" cy="230" rx="96" ry="28" fill="#94A3B8"/>
+
+    <!-- Sparkle clean on chair -->
+    <polygon points="190,120 194,126 202,129 194,132 190,138 186,132 178,129 186,126" fill="#F59E0B"/>
+    <polygon points="100,225 103,229 109,231 103,233 100,237 97,233 91,231 97,229" fill="#F59E0B"/>
+  </g>
+</svg>

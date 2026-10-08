@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="wandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2D50"/>
+      <stop offset="50%" stop-color="#081A2F"/>
+      <stop offset="100%" stop-color="#040D18"/>
+    </linearGradient>
+
+    <!-- Metallic Wand Gradient -->
+    <linearGradient id="chromeTube" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="25%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- High-pressure steam spray -->
+    <linearGradient id="steamSpray" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#93C5FD" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glowing vacuum suction -->
+    <radialGradient id="suctionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="wandSparkle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark Atmospheric Backdrop -->
+  <rect width="900" height="600" fill="url(#wandBg)"/>
+
+  <!-- Carpet Base (Perspective Floor) -->
+  <polygon points="0,320 900,280 900,600 0,600" fill="#2E241A"/>
+
+  <!-- Clean Extracted Strip (Where the wand just passed!) -->
+  <polygon points="280,600 520,310 720,310 560,600" fill="#EAE2D5"/>
+  <!-- Triangle grooming tracks on clean path -->
+  <polygon points="320,600 420,330 480,600" fill="#FFFFFF" opacity="0.3"/>
+  <polygon points="440,600 560,320 620,600" fill="#D3C7B5" opacity="0.4"/>
+
+  <!-- Steam & Water Jets under extraction wand -->
+  <path d="M 440,310 L 410,390 L 590,390 L 540,310 Z" fill="url(#steamSpray)"/>
+  <path d="M 460,320 Q 380,260 340,220 Q 300,180 320,130" fill="none" stroke="#FFFFFF" stroke-width="16" opacity="0.25" stroke-linecap="round"/>
+  <path d="M 490,320 Q 550,250 520,190 Q 490,140 540,90" fill="none" stroke="#93C5FD" stroke-width="20" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Water droplets and mist particles -->
+  <g fill="#93C5FD" opacity="0.85">
+    <circle cx="430" cy="350" r="4"/>
+    <circle cx="450" cy="380" r="5"/>
+    <circle cx="510" cy="370" r="6"/>
+    <circle cx="540" cy="340" r="4.5"/>
+    <circle cx="400" cy="330" r="3.5"/>
+    <circle cx="560" cy="360" r="4"/>
+  </g>
+
+  <!-- The Wand Head (Stainless Steel Carpet Cleaning Wand) -->
+  <g transform="rotate(-18, 500, 300)">
+    <!-- Stainless Steel Wand Head Bell -->
+    <polygon points="410,290 570,290 515,220 465,220" fill="url(#chromeTube)" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Head Base Lip / Glide -->
+    <rect x="400" y="288" width="180" height="12" rx="4" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+
+    <!-- Wand Pipe / Tube going up and out of frame -->
+    <rect x="478" y="-150" width="24" height="370" rx="6" fill="url(#chromeTube)" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- High-pressure brass spray line and trigger assembly -->
+    <path d="M 470,-100 L 470,210 L 440,240" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="470" cy="70" r="10" fill="#F59E0B"/>
+    <rect x="466" y="140" width="8" height="30" rx="3" fill="#D97706"/>
+  </g>
+
+  <!-- Golden Sparkles on the Clean Section -->
+  <g fill="#F59E0B" filter="url(#wandSparkle)">
+    <polygon points="360,480 366,492 378,498 366,504 360,516 354,504 342,498 354,492"/>
+    <polygon points="510,430 514,438 522,442 514,446 510,454 506,446 498,442 506,438"/>
+  </g>
+</svg>

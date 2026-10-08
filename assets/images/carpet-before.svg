@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%">
+  <defs>
+    <!-- Dirty carpet base texture -->
+    <linearGradient id="dirtyBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#736353"/>
+      <stop offset="30%" stop-color="#5C4D3E"/>
+      <stop offset="70%" stop-color="#4F4235"/>
+      <stop offset="100%" stop-color="#6B5B4C"/>
+    </linearGradient>
+
+    <!-- Dark stain gradients -->
+    <radialGradient id="stain1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#302318" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#4A3728" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#5C4D3E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="stain2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#261C14" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#3D2E21" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#5C4D3E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="trafficLane" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A2D22" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#4F4235" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#736353" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Carpet fiber noise filter -->
+    <filter id="carpetFiber" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="4" result="noise"/>
+      <feColorMatrix type="matrix" values="0.33 0 0 0 0  0 0.33 0 0 0  0 0 0.33 0 0  0 0 0 0.45 0" in="noise" result="coloredNoise"/>
+      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise"/>
+    </filter>
+  </defs>
+
+  <!-- Carpet Base -->
+  <rect width="1000" height="650" fill="url(#dirtyBase)" filter="url(#carpetFiber)"/>
+
+  <!-- High Traffic Dirt Pattern Across Center -->
+  <ellipse cx="500" cy="360" rx="420" ry="190" fill="url(#trafficLane)"/>
+  <ellipse cx="420" cy="310" rx="260" ry="140" fill="url(#trafficLane)"/>
+
+  <!-- Persistent Spill Stains -->
+  <ellipse cx="320" cy="240" rx="110" ry="75" fill="url(#stain1)"/>
+  <ellipse cx="370" cy="270" rx="80" ry="50" fill="url(#stain2)"/>
+  <ellipse cx="650" cy="400" rx="140" ry="90" fill="url(#stain1)"/>
+  <ellipse cx="710" cy="380" rx="90" ry="60" fill="url(#stain2)"/>
+  <ellipse cx="220" cy="420" rx="95" ry="65" fill="url(#stain2)"/>
+  <ellipse cx="520" cy="460" rx="130" ry="70" fill="url(#stain1)"/>
+
+  <!-- Mud Footprint / High Wear Blotches -->
+  <path d="M 460,200 Q 480,180 500,210 Q 520,240 480,260 Q 450,240 460,200 Z" fill="#2E2015" opacity="0.8"/>
+  <path d="M 540,230 Q 560,210 580,240 Q 600,270 560,290 Q 530,270 540,230 Z" fill="#2E2015" opacity="0.75"/>
+
+  <!-- Shadow vignette -->
+  <rect width="1000" height="650" fill="none" stroke="#23170E" stroke-width="40" opacity="0.5"/>
+</svg>

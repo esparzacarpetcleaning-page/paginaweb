@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="shieldBgRound" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#122B4D"/>
+      <stop offset="70%" stop-color="#08182D"/>
+      <stop offset="100%" stop-color="#040D1A"/>
+    </radialGradient>
+    
+    <linearGradient id="silverRingRound" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#B0C4DE"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="75%" stop-color="#8A9BA8"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+
+    <linearGradient id="helmetPlumeRound" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="30%" stop-color="#1D4ED8"/>
+      <stop offset="70%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <linearGradient id="metalGradRound" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="30%" stop-color="#CBD5E1"/>
+      <stop offset="60%" stop-color="#64748B"/>
+      <stop offset="85%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    
+    <path id="topTextArcRound" d="M 18,50 A 32,32 0 0,1 82,50" fill="none"/>
+    <path id="bottomTextArcRound" d="M 82,50 A 32,32 0 0,1 18,50" fill="none"/>
+  </defs>
+
+  <!-- Outer Glow / Ring -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(245, 158, 11, 0.25)" stroke-width="1"/>
+  <circle cx="50" cy="50" r="46" fill="url(#shieldBgRound)" stroke="url(#silverRingRound)" stroke-width="3"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="url(#silverRingRound)" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Inner Shield -->
+  <circle cx="50" cy="50" r="28" fill="#081A32" stroke="url(#silverRingRound)" stroke-width="1.8"/>
+
+  <!-- Circular Text: ESPARZA'S -->
+  <text font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="6.8" fill="#FFFFFF" letter-spacing="1.5">
+    <textPath href="#topTextArcRound" startOffset="50%" text-anchor="middle">ESPARZA'S</textPath>
+  </text>
+  
+  <!-- Circular Text: CARPET CLEANING -->
+  <text font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="5" fill="#F59E0B" letter-spacing="1">
+    <textPath href="#bottomTextArcRound" startOffset="50%" text-anchor="middle">CARPET CLEANING</textPath>
+  </text>
+
+  <!-- Side Stars -->
+  <polygon points="17,50 18.2,52.5 21,52.9 19,54.8 19.5,57.5 17,56.2 14.5,57.5 15,54.8 13,52.9 15.8,52.5" fill="#FFFFFF" transform="scale(0.8) translate(5, 12)"/>
+  <polygon points="83,50 84.2,52.5 87,52.9 85,54.8 85.5,57.5 83,56.2 80.5,57.5 81,54.8 79,52.9 81.8,52.5" fill="#FFFFFF" transform="scale(0.8) translate(16, 12)"/>
+
+  <!-- SPARTAN HELMET ICON -->
+  <!-- Helmet Plume / Crest -->
+  <path d="M 40,26 C 45,21 57,21 62,28 C 65,33 66,39 65,42 C 63,38 59,34 54,32 C 48,30 42,32 40,26 Z" fill="url(#helmetPlumeRound)"/>
+  <path d="M 42,28 C 47,24 55,24 60,30 C 56,31 50,31 46,33 C 44,31 43,29 42,28 Z" fill="#E2E8F0"/>
+
+  <!-- Helmet Dome -->
+  <path d="M 41,35 C 41,31 46,28 52,28 C 58,28 62,32 62,37 C 62,43 61,48 59,53 C 58,55 57,59 58,63 L 55,62 C 54,58 55,54 56,51 C 57,47 57,42 56,39 C 55,36 53,35 50,35 C 46,35 43,38 43,42 L 41,35 Z" fill="url(#metalGradRound)"/>
+
+  <!-- Cheek Guard & Visor (T-Face Opening) -->
+  <path d="M 43,41 C 46,38 51,37 54,39 L 55,48 L 51,48 L 51,44 L 46,44 L 47,56 L 43,60 C 41,53 41,46 43,41 Z" fill="url(#silverRingRound)"/>
+  <!-- T-Opening Shadow / Face Inner -->
+  <path d="M 46,45 L 50,45 L 50,54 L 46,54 Z" fill="#061220"/>
+  <path d="M 50,47 L 54,47 L 54,49 L 50,49 Z" fill="#061220"/>
+  <!-- Eye Glow slit -->
+  <polygon points="46,46 49,46 48,47 46,47" fill="#60A5FA"/>
+
+  <!-- Jaw & Neck Shield Plate -->
+  <path d="M 45,58 L 52,55 L 55,58 L 54,64 L 46,65 Z" fill="url(#metalGradRound)"/>
+  <circle cx="50" cy="50" r="26" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+</svg>

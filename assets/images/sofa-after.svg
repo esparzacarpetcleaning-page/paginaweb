@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sofaBgClean" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="cleanLinen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F1ECE5"/>
+      <stop offset="100%" stop-color="#E5DED4"/>
+    </linearGradient>
+    <filter id="cleanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Clean room backdrop -->
+  <rect width="800" height="550" fill="url(#sofaBgClean)"/>
+
+  <!-- Sofa Backrest Structure (Immaculate Warm Linen) -->
+  <rect x="100" y="100" width="600" height="220" rx="30" fill="#E8E2D8"/>
+  
+  <!-- Backrest Cushions -->
+  <rect x="120" y="120" width="175" height="180" rx="20" fill="url(#cleanLinen)" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="312" y="120" width="175" height="180" rx="20" fill="url(#cleanLinen)" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="505" y="120" width="175" height="180" rx="20" fill="url(#cleanLinen)" stroke="#D8CFBE" stroke-width="2"/>
+
+  <!-- Clean Armrests -->
+  <rect x="70" y="190" width="70" height="230" rx="25" fill="#EFE9DF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="660" y="190" width="70" height="230" rx="25" fill="#EFE9DF" stroke="#D8CFBE" stroke-width="2"/>
+
+  <!-- Seat Cushions Base -->
+  <rect x="120" y="280" width="560" height="150" rx="20" fill="#E2DAD0"/>
+  <rect x="130" y="290" width="170" height="130" rx="16" fill="url(#cleanLinen)" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="315" y="290" width="170" height="130" rx="16" fill="url(#cleanLinen)" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="500" y="290" width="170" height="130" rx="16" fill="url(#cleanLinen)" stroke="#D8CFBE" stroke-width="2"/>
+
+  <!-- Highlighting & Fresh Tufting -->
+  <circle cx="205" cy="180" r="5" fill="#D3C9B8"/>
+  <circle cx="400" cy="180" r="5" fill="#D3C9B8"/>
+  <circle cx="590" cy="180" r="5" fill="#D3C9B8"/>
+
+  <!-- Sparkles -->
+  <g fill="#F59E0B" filter="url(#cleanGlow)">
+    <polygon points="215,310 220,320 230,325 220,330 215,340 210,330 200,325 210,320"/>
+    <polygon points="560,320 564,328 572,332 564,336 560,344 556,336 548,332 556,328"/>
+  </g>
+  <g fill="#38BDF8" opacity="0.8">
+    <circle cx="390" cy="340" r="3"/>
+    <circle cx="410" cy="330" r="2.5"/>
+  </g>
+
+  <!-- Sofa Wooden Legs -->
+  <polygon points="110,430 130,430 120,490 100,490" fill="#5C3D2E"/>
+  <polygon points="670,430 690,430 700,490 680,490" fill="#5C3D2E"/>
+  <polygon points="390,430 410,430 405,490 395,490" fill="#5C3D2E"/>
+</svg>

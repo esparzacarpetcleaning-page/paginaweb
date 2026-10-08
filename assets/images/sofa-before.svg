@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sofaBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2DCD5"/>
+      <stop offset="100%" stop-color="#C5BDB5"/>
+    </linearGradient>
+    <radialGradient id="cushionShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6B5949" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#A8998C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spillStain" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#422918" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#66442C" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#A8998C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Living room wall backdrop -->
+  <rect width="800" height="550" fill="url(#sofaBg)"/>
+
+  <!-- Sofa Backrest Structure (Dirty Fabric) -->
+  <rect x="100" y="100" width="600" height="220" rx="30" fill="#9E9084"/>
+  
+  <!-- Backrest Cushions -->
+  <rect x="120" y="120" width="175" height="180" rx="20" fill="#B3A598" stroke="#85766B" stroke-width="3"/>
+  <rect x="312" y="120" width="175" height="180" rx="20" fill="#B0A194" stroke="#85766B" stroke-width="3"/>
+  <rect x="505" y="120" width="175" height="180" rx="20" fill="#A8998C" stroke="#85766B" stroke-width="3"/>
+
+  <!-- Sofa Armrests -->
+  <rect x="70" y="190" width="70" height="230" rx="25" fill="#8C7D70" stroke="#706256" stroke-width="3"/>
+  <rect x="660" y="190" width="70" height="230" rx="25" fill="#8C7D70" stroke="#706256" stroke-width="3"/>
+
+  <!-- Seat Cushions Base -->
+  <rect x="120" y="280" width="560" height="150" rx="20" fill="#9E9084"/>
+  <rect x="130" y="290" width="170" height="130" rx="16" fill="#B3A598" stroke="#85766B" stroke-width="2"/>
+  <rect x="315" y="290" width="170" height="130" rx="16" fill="#A8998C" stroke="#85766B" stroke-width="2"/>
+  <rect x="500" y="290" width="170" height="130" rx="16" fill="#9E9084" stroke="#85766B" stroke-width="2"/>
+
+  <!-- Dirt & Grime Accumulation on Armrests -->
+  <ellipse cx="105" cy="240" rx="28" ry="45" fill="url(#cushionShadow)"/>
+  <ellipse cx="695" cy="240" rx="28" ry="45" fill="url(#cushionShadow)"/>
+
+  <!-- Prominent Beverage Spills & Food Stains on Cushions -->
+  <ellipse cx="220" cy="350" rx="65" ry="40" fill="url(#spillStain)"/>
+  <ellipse cx="390" cy="360" rx="55" ry="35" fill="url(#spillStain)"/>
+  <ellipse cx="580" cy="340" rx="75" ry="45" fill="url(#spillStain)"/>
+
+  <!-- Sofa Wooden Legs -->
+  <polygon points="110,430 130,430 120,490 100,490" fill="#3D2B1F"/>
+  <polygon points="670,430 690,430 700,490 680,490" fill="#3D2B1F"/>
+  <polygon points="390,430 410,430 405,490 395,490" fill="#3D2B1F"/>
+</svg>

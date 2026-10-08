@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <radialGradient id="sweatStain" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C29D38" stop-opacity="0.9"/>
+      <stop offset="65%" stop-color="#D4B75D" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#DDD6C7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="darkHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C6330" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#A88B46" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E2DCD2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="550" fill="#EAE5DC"/>
+
+  <!-- Mattress Perspective Block -->
+  <g transform="translate(100, 60)">
+    <!-- Quilted Top Surface -->
+    <polygon points="120,40 540,40 460,320 40,320" fill="#DDD5C7" stroke="#C4B9A5" stroke-width="3"/>
+
+    <!-- Mattress Side Border -->
+    <polygon points="40,320 460,320 460,380 40,380" fill="#BDB09C" stroke="#A89A84" stroke-width="3"/>
+    <polygon points="460,320 540,40 540,100 460,380" fill="#ABA08C" stroke="#968974" stroke-width="3"/>
+
+    <!-- Diamond Quilted Pattern -->
+    <path d="M 160,80 L 420,80 M 130,140 L 440,140 M 100,200 L 440,200 M 70,260 L 450,260" stroke="#C2B7A3" stroke-width="2" stroke-dasharray="8 6"/>
+    <path d="M 180,40 L 100,320 M 260,40 L 180,320 M 340,40 L 260,320 M 420,40 L 340,320 M 500,40 L 420,320" stroke="#C2B7A3" stroke-width="2" stroke-dasharray="8 6"/>
+
+    <!-- Prominent Sweat & Liquid Stains -->
+    <ellipse cx="220" cy="180" rx="90" ry="60" fill="url(#sweatStain)"/>
+    <ellipse cx="210" cy="170" rx="55" ry="35" fill="url(#darkHalo)"/>
+
+    <ellipse cx="360" cy="220" rx="75" ry="50" fill="url(#sweatStain)"/>
+    <ellipse cx="380" cy="230" rx="40" ry="28" fill="url(#darkHalo)"/>
+
+    <ellipse cx="290" cy="120" rx="50" ry="30" fill="url(#sweatStain)"/>
+  </g>
+</svg>

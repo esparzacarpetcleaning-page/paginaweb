@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%">
+  <defs>
+    <!-- Pristine clean carpet gradient -->
+    <linearGradient id="cleanBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5EFE6"/>
+      <stop offset="50%" stop-color="#EBE3D5"/>
+      <stop offset="100%" stop-color="#DFD7C7"/>
+    </linearGradient>
+
+    <!-- Grooming line contrast gradients -->
+    <linearGradient id="groomStrokeLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#F8F4EC" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E2D8C7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="groomStrokeDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5BAA7" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#D6CBBA" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#E8DFCF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Clean carpet fiber noise -->
+    <filter id="cleanFiber" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="0.2 0 0 0 0  0 0.2 0 0 0  0 0 0.2 0 0  0 0 0 0.15 0" in="noise" result="subtleNoise"/>
+      <feBlend mode="multiply" in="SourceGraphic" in2="subtleNoise"/>
+    </filter>
+
+    <filter id="sparkleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Clean Base with texture -->
+  <rect width="1000" height="650" fill="url(#cleanBase)" filter="url(#cleanFiber)"/>
+
+  <!-- Professional Carpet Extraction Triangle Grooming Patterns (Fresh Steam Vacuum Strokes) -->
+  <g opacity="0.85">
+    <!-- Row 1 Grooming Triangles -->
+    <polygon points="120,650 250,150 380,650" fill="url(#groomStrokeLight)"/>
+    <polygon points="250,150 380,650 510,150" fill="url(#groomStrokeDark)"/>
+    <polygon points="380,650 510,150 640,650" fill="url(#groomStrokeLight)"/>
+    <polygon points="510,150 640,650 770,150" fill="url(#groomStrokeDark)"/>
+    <polygon points="640,650 770,150 900,650" fill="url(#groomStrokeLight)"/>
+    <polygon points="770,150 900,650 1030,150" fill="url(#groomStrokeDark)"/>
+
+    <!-- High perspective grooming strokes -->
+    <path d="M 0,200 L 1000,200" stroke="#F8F4EC" stroke-width="4" opacity="0.4"/>
+    <path d="M 0,350 L 1000,350" stroke="#FFFFFF" stroke-width="6" opacity="0.3"/>
+    <path d="M 0,500 L 1000,500" stroke="#F8F4EC" stroke-width="5" opacity="0.4"/>
+  </g>
+
+  <!-- Clean Light Glow Across Center -->
+  <ellipse cx="500" cy="325" rx="450" ry="220" fill="#FFFFFF" opacity="0.25"/>
+
+  <!-- Sparkles of Cleanliness -->
+  <g fill="#FFFFFF" filter="url(#sparkleGlow)">
+    <path d="M 300,180 Q 300,200 320,200 Q 300,200 300,220 Q 300,200 280,200 Q 300,200 300,180 Z" opacity="0.95"/>
+    <path d="M 680,260 Q 680,278 698,278 Q 680,278 680,296 Q 680,278 662,278 Q 680,278 680,260 Z" opacity="0.9"/>
+    <path d="M 450,420 Q 450,435 465,435 Q 450,435 450,450 Q 450,435 435,435 Q 450,435 450,420 Z" opacity="0.85"/>
+    <path d="M 820,480 Q 820,495 835,495 Q 820,495 820,510 Q 820,495 805,495 Q 820,495 820,480 Z" opacity="0.85"/>
+  </g>
+</svg>
