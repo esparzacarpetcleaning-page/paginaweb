@@ -1416,14 +1416,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  -webkit-mask-image: 
-    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 4%, rgba(0,0,0,0.8) 12%, #000000 22%, #000000 88%, rgba(0,0,0,0.4) 97%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 4%, #000000 12%, #000000 88%, rgba(0,0,0,0.4) 96%, transparent 100%);
-  -webkit-mask-composite: destination-in;
-  mask-image: 
-    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 4%, rgba(0,0,0,0.8) 12%, #000000 22%, #000000 88%, rgba(0,0,0,0.4) 97%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 4%, #000000 12%, #000000 88%, rgba(0,0,0,0.4) 96%, transparent 100%);
-  mask-composite: intersect;
+  filter: brightness(1.06) contrast(1.03);
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1432,10 +1425,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: 
-    linear-gradient(to right, #071C39 0%, rgba(7, 28, 57, 0.8) 7%, rgba(7, 28, 57, 0.35) 15%, transparent 28%, transparent 82%, rgba(6, 21, 43, 0.45) 94%, #06152B 100%),
-    linear-gradient(to bottom, rgba(6, 21, 43, 0.35) 0%, transparent 12%, transparent 88%, rgba(6, 21, 43, 0.35) 100%),
-    radial-gradient(circle at center, transparent 55%, rgba(6, 21, 43, 0.35) 100%);
+  background: linear-gradient(to right, rgba(7, 28, 57, 0.45) 0%, transparent 18%, transparent 100%);
 }
 
 @media (max-width: 900px) {
@@ -1446,12 +1436,10 @@
     padding: 2.5rem 1.5rem;
   }
   .banner-quote-image {
-    min-height: 260px;
+    min-height: 240px;
   }
   .banner-quote-image::after {
-    background: 
-      linear-gradient(to bottom, #071C39 0%, rgba(7, 28, 57, 0.96) 14%, rgba(7, 28, 57, 0.6) 28%, transparent 45%, transparent 75%, rgba(6, 21, 43, 0.6) 90%, #06152B 100%),
-      linear-gradient(to right, rgba(6, 21, 43, 0.5) 0%, transparent 16%, transparent 84%, rgba(6, 21, 43, 0.5) 100%);
+    background: linear-gradient(to bottom, rgba(7, 28, 57, 0.4) 0%, transparent 20%, transparent 100%);
   }
 }
 
@@ -1583,6 +1571,19 @@
 @media (max-width: 640px) {
   .why-grid-5 {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .why-item {
+    padding: 0.65rem 0.5rem;
+  }
+  .why-icon-circle {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0.6rem;
+  }
+  .why-icon-circle svg {
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -3226,6 +3227,9 @@
   }
 }
 
+.gallery-single-showcase:hover img {
+  transform: scale(1.04);
+}
 .gallery-single-showcase:hover img {
   transform: scale(1.04);
 }
