@@ -1,0 +1,13 @@
+# ==============================================================================
+# robots.txt - Esparza's Carpet Cleaning
+# Website: https://esparzascarpetcleaning.com
+# ==============================================================================
+
+User-agent: *
+Allow: /
+
+# Directives
+Disallow: /imagenesextra/
+
+# Sitemaps
+Sitemap: https://esparzascarpetcleaning.com/sitemap.xml
